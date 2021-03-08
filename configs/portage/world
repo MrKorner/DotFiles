@@ -53,6 +53,7 @@ net-misc/networkmanager
 net-misc/remmina
 net-misc/youtube-dl
 net-p2p/transmission
+net-wireless/blueman
 net-wireless/bluez
 net-wireless/wireless-tools
 sci-calculators/galculator

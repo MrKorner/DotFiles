@@ -1,3 +1,4 @@
+net-wireless/blueman appindicator
 games-util/steam-client-meta steamfonts trayicon
 sys-apps/portage gentoo-dev
 media-libs/openal abi_x86_32
