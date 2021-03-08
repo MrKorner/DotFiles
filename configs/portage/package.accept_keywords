@@ -1,0 +1,37 @@
+sys-apps/intel-power-control **
+gui-wm/wayfire ~amd64
+gui-apps/wcm ~amd64
+gui-apps/waybar ~amd64
+dev-libs/spdlog ~amd64
+games-util/steam-launcher ~amd64
+games-util/game-device-udev-rules ~amd64
+games-util/steam-meta ~amd64
+games-util/steam-client-meta ~amd64
+gui-apps/wdisplays ~amd64
+games-util/steam-games-meta ~amd64
+gui-apps/wlr-randr ~amd64
+net-misc/freetube-bin ~amd64
+# required by lutris (argument)
+=games-util/lutris-0.5.8.3 ~amd64
+# required by deadbeef (argument)
+=media-sound/deadbeef-1.8.4 ~amd64
+# required by wayfire-plugins-extra (argument)
+=gui-libs/wayfire-plugins-extra-0.7.0 ~amd64
+# required by lolcat-jaseg (argument)
+=games-misc/lolcat-jaseg-1.0 ~amd64
+# required by games-util/steam-client-meta-0-r20210213::steam-overlay[steamfonts]
+# required by games-util/steam-meta-0-r20160817::steam-overlay
+# required by @selected
+# required by @world (argument)
+=media-fonts/steamfonts-1 ~amd64
+# required by x11-misc/xfe-1.43.2::gentoo
+# required by xfe (argument)
+=x11-libs/fox-1.6.57-r1 ~amd64
+# required by xfe (argument)
+=x11-misc/xfe-1.43.2 ~amd64
+# required by gomuks (argument)
+=net-im/gomuks-0.2.3 ~amd64
+# required by menulibre (argument)
+=x11-misc/menulibre-2.2.1-r2 ~amd64
+# required by ipscan-bin (argument)
+=net-analyzer/ipscan-bin-3.7.4 ~amd64

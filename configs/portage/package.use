@@ -1,0 +1,498 @@
+games-util/steam-client-meta steamfonts trayicon
+sys-apps/portage gentoo-dev
+media-libs/openal abi_x86_32
+sys-fs/lvm2 -thin
+media-sound/pulseaudio abi_x86_32
+sys-fs/udisks -lvm
+dev-lang/ruby -rdoc -berkdb -gdbm 
+net-libs/webkit-gtk -geolocation -jpeg2k 
+media-libs/libcanberra -gtk
+net-print/cups-filters -pdf -tiff -jpeg -postscript -png -foomatic
+app-text/evince -gnome -nautilus -tiff
+app-arch/file-roller -nautilus
+xfce-base/thunar -pcre -trash-panel-plugin
+net-misc/remmina rdp appindicator
+media-sound/deadbeef -dts wavpack -supereq ffmpeg
+net-firewall/firewalld -gui
+sys-boot/grub -themes mount
+sys-auth/polkit gtk -kde
+net-wireless/bluez user-session
+media-fonts/fontawesome ttf
+sys-apps/dbus user-session
+gui-libs/wlroots iccm x11-backend seatd
+gui-apps/waybar network popups tray wifi
+net-libs/glib-networking -libproxy
+media-gfx/gimp webp -mng -gnome
+dev-libs/glib dbus
+net-fs/samba client
+media-sound/pulseaudio dbus
+media-libs/clutter egl
+x11-libs/vte -vala
+sys-block/parted device-mapper
+sys-fs/e2fsprogs fuse
+sys-block/gparted cryptsetup fat ntfs
+media-video/ffmpeg -vdpau twolame speex openh264 openal lzma codec2 amr vpx wavpack
+media-video/mpv -cli -samba -luajit -luaa libmpv
+net-p2p/transmission gtk -qt5
+sys-apps/gnome-disk-utility fat -gnome
+app-crypt/gcr gtk
+sys-devel/gcc graphite
+net-wireless/wpa_supplicant -qt5 dbus
+x11-libs/libdrm video_cards_radeon
+sys-apps/lshw gtk
+dev-lang/rust system-llvm llvm_targets_AMDGPU system-bootstrap
+app-crypt/pinentry gnome-keyring 
+gnome-base/gvfs archive nfs samba mtp policykit -cdda udisks 
+sys-libs/libblockdev -lvm
+media-libs/mesa llvm video_cards_iris video_cards_radeonsi d3d9  vaapi
+app-arch/p7zip -wxwidgets -kde
+www-client/w3m imlib
+sys-libs/ncurses -gpm
+media-gfx/darktable -colord
+media-libs/phonon -vlc
+media-libs/libsdl2 gles2
+x11-libs/gtk+ -colord
+media-gfx/fontforge -gtk 
+>=sys-apps/dbus-1.12.18 user-session
+net-misc/networkmanager -bluetooth -modemmanager -ppp
+media-fonts/cantarell font_types_otf
+>=media-libs/libvpx-1.9.0 postproc
+>=media-video/ffmpeg-4.3.1 vdpau vaapi x265
+>=dev-util/ostree-2020.6 curl
+>=sys-block/parted-3.3-r1 device-mapper
+>=dev-libs/libdbusmenu-16.04.0-r1 gtk3 -gtk
+# required by net-wireless/bluez-5.55::gentoo[systemd]
+# required by dev-lang/python-3.8.7::gentoo[bluetooth]
+# required by sys-libs/libblockdev-2.24::gentoo[python_single_target_python3_8]
+# required by sys-fs/udisks-2.9.1::gentoo
+# required by @selected
+# required by @world (argument)
+>=app-text/xmlto-0.0.28-r3 text
+# required by dev-qt/qtwayland-5.15.2::gentoo
+>=dev-qt/qtgui-5.15.2-r1 egl
+# required by dev-qt/qtcore-5.15.2-r1::gentoo
+# required by dev-qt/qtwidgets-5.15.2::gentoo
+# required by dev-qt/qtdeclarative-5.15.2::gentoo[widgets]
+# required by dev-qt/qtwayland-5.15.2::gentoo
+# required by dev-qt/qtgui-5.15.2-r1::gentoo[wayland]
+# required by games-action/multimc-0.6.11::guru
+# required by @selected
+# required by @world (argument)
+>=sys-apps/dbus-1.12.20-r1 user-session
+# required by x11-libs/libXfixes-5.0.3-r3::gentoo
+# required by x11-libs/libva-2.10.0::gentoo[X]
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo
+# required by dev-python/PyQt5-5.15.2::gentoo[multimedia]
+# required by net-firewall/firewalld-0.7.1-r3::gentoo[python_single_target_python3_8,gui]
+# required by @selected
+# required by @world (argument)
+>=dev-qt/qtmultimedia-5.15.2 widgets
+# required by sys-fs/udisks-2.9.1::gentoo
+# required by gnome-base/gvfs-1.44.1::gentoo[udisks]
+# required by app-editors/gedit-3.36.2::gentoo
+# required by @selected
+# required by @world (argument)
+>=sys-libs/libblockdev-2.24 vdo
+# required by x11-libs/libXext-1.3.4::gentoo
+# required by media-libs/libglvnd-1.3.2-r2::gentoo[X]
+# required by media-libs/mesa-20.2.6::gentoo
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo[wayland]
+# required by x11-libs/libva-2.7.1::gentoo[video_cards_intel,-video_cards_i965]
+# required by media-video/ffmpeg-4.3.2::gentoo
+# required by gui-apps/wf-recorder-0.2.1-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=x11-libs/libX11-1.7.0 abi_x86_32
+# required by x11-libs/libxcb-1.14::gentoo
+# required by media-libs/mesa-20.2.6::gentoo[X]
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo[wayland]
+# required by x11-libs/libva-2.7.1::gentoo[video_cards_intel,-video_cards_i965]
+# required by media-video/ffmpeg-4.3.2::gentoo
+# required by gui-apps/wf-recorder-0.2.1-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=x11-libs/libXau-1.0.9-r1 abi_x86_32
+# required by media-libs/mesa-20.2.6::gentoo[X]
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo[wayland]
+# required by x11-libs/libva-2.7.1::gentoo[video_cards_intel,-video_cards_i965]
+# required by media-video/ffmpeg-4.3.2::gentoo
+# required by gui-apps/wf-recorder-0.2.1-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=x11-libs/libxcb-1.14 abi_x86_32
+# required by x11-libs/libxcb-1.14::gentoo
+# required by media-libs/mesa-20.2.6::gentoo[X]
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo[wayland]
+# required by x11-libs/libva-2.7.1::gentoo[video_cards_intel,-video_cards_i965]
+# required by media-video/ffmpeg-4.3.2::gentoo
+# required by gui-apps/wf-recorder-0.2.1-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=x11-libs/libXdmcp-1.1.3 abi_x86_32
+# required by x11-libs/libxcb-1.14::gentoo
+# required by media-libs/mesa-20.2.6::gentoo[X]
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo[wayland]
+# required by x11-libs/libva-2.7.1::gentoo[video_cards_intel,-video_cards_i965]
+# required by media-video/ffmpeg-4.3.2::gentoo
+# required by gui-apps/wf-recorder-0.2.1-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=x11-base/xcb-proto-1.14.1 abi_x86_32
+# required by x11-libs/libva-2.7.1::gentoo[opengl]
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo
+>=virtual/opengl-7.0-r2 abi_x86_32
+# required by virtual/opengl-7.0-r2::gentoo
+# required by x11-libs/libva-2.7.1::gentoo[opengl]
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo
+>=media-libs/mesa-20.2.6 abi_x86_32
+# required by dev-libs/wayland-1.18.0::gentoo
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo[wayland]
+# required by x11-libs/libva-2.7.1::gentoo[video_cards_intel,-video_cards_i965]
+# required by media-libs/mesa-20.2.6::gentoo[vaapi,gallium]
+# required by virtual/opengl-7.0-r2::gentoo
+# required by games-util/steam-launcher-1.0.0.68::steam-overlay[steamruntime]
+# required by games-util/steam-launcher (argument)
+>=dev-libs/expat-2.2.10 abi_x86_32
+# required by media-libs/mesa-20.2.6::gentoo
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo[wayland]
+# required by x11-libs/libva-2.7.1::gentoo[video_cards_intel,-video_cards_i965]
+# required by media-video/ffmpeg-4.3.2::gentoo
+# required by gui-apps/wf-recorder-0.2.1-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=media-libs/libglvnd-1.3.2-r2 abi_x86_32
+# required by sys-devel/llvm-11.0.1::gentoo
+# required by media-libs/mesa-20.2.6::gentoo[-video_cards_r600,llvm,gallium,video_cards_radeonsi,-video_cards_radeon,-opencl]
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo[wayland]
+# required by x11-libs/libva-2.7.1::gentoo[video_cards_intel,-video_cards_i965]
+# required by media-video/ffmpeg-4.3.2::gentoo
+# required by gui-apps/wf-recorder-0.2.1-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=sys-libs/zlib-1.2.11-r3 abi_x86_32
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo
+>=x11-libs/libva-2.7.1 abi_x86_32
+# required by media-libs/mesa-20.2.6::gentoo[wayland]
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo[wayland]
+# required by x11-libs/libva-2.7.1::gentoo[video_cards_intel,-video_cards_i965]
+# required by media-video/ffmpeg-4.3.2::gentoo
+# required by gui-apps/wf-recorder-0.2.1-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-libs/wayland-1.18.0 abi_x86_32
+# required by media-libs/mesa-20.2.6::gentoo
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo[wayland]
+# required by x11-libs/libva-2.7.1::gentoo[video_cards_intel,-video_cards_i965]
+# required by media-video/ffmpeg-4.3.2::gentoo
+# required by gui-apps/wf-recorder-0.2.1-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=x11-libs/libdrm-2.4.103 abi_x86_32
+# required by media-libs/mesa-20.2.6::gentoo[X]
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo[wayland]
+# required by x11-libs/libva-2.7.1::gentoo[video_cards_intel,-video_cards_i965]
+# required by media-video/ffmpeg-4.3.2::gentoo
+# required by gui-apps/wf-recorder-0.2.1-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=x11-libs/libxshmfence-1.3-r2 abi_x86_32
+# required by media-libs/mesa-20.2.6::gentoo[X]
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo[wayland]
+# required by x11-libs/libva-2.7.1::gentoo[video_cards_intel,-video_cards_i965]
+# required by media-video/ffmpeg-4.3.2::gentoo
+# required by gui-apps/wf-recorder-0.2.1-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=x11-libs/libXdamage-1.1.5 abi_x86_32
+# required by x11-libs/libXrandr-1.5.2::gentoo
+# required by media-libs/mesa-20.2.6::gentoo[X]
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo[wayland]
+# required by x11-libs/libva-2.7.1::gentoo[video_cards_intel,-video_cards_i965]
+# required by media-video/ffmpeg-4.3.2::gentoo
+# required by gui-apps/wf-recorder-0.2.1-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=x11-libs/libXext-1.3.4 abi_x86_32
+# required by media-libs/mesa-20.2.6::gentoo[X]
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo[wayland]
+# required by x11-libs/libva-2.7.1::gentoo[video_cards_intel,-video_cards_i965]
+# required by media-video/ffmpeg-4.3.2::gentoo
+# required by gui-apps/wf-recorder-0.2.1-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=x11-libs/libXxf86vm-1.1.4-r2 abi_x86_32
+# required by x11-libs/libXdamage-1.1.5::gentoo
+# required by media-libs/mesa-20.2.6::gentoo[X]
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo[wayland]
+# required by x11-libs/libva-2.7.1::gentoo[video_cards_intel,-video_cards_i965]
+# required by media-video/ffmpeg-4.3.2::gentoo
+# required by gui-apps/wf-recorder-0.2.1-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=x11-libs/libXfixes-5.0.3-r3 abi_x86_32
+# required by media-libs/mesa-20.2.6::gentoo[zstd]
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo[wayland]
+# required by x11-libs/libva-2.7.1::gentoo[video_cards_intel,-video_cards_i965]
+# required by media-video/ffmpeg-4.3.2::gentoo
+# required by gui-apps/wf-recorder-0.2.1-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=app-arch/zstd-1.4.5 abi_x86_32
+# required by media-libs/mesa-20.2.6::gentoo[-video_cards_r600,llvm,gallium,video_cards_radeonsi,-video_cards_radeon,-opencl]
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo[wayland]
+# required by x11-libs/libva-2.7.1::gentoo[video_cards_intel,-video_cards_i965]
+# required by media-video/ffmpeg-4.3.2::gentoo
+# required by gui-apps/wf-recorder-0.2.1-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=sys-devel/llvm-11.0.1 abi_x86_32
+# required by media-libs/mesa-20.2.6::gentoo[X]
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo[wayland]
+# required by x11-libs/libva-2.7.1::gentoo[video_cards_intel,-video_cards_i965]
+# required by media-video/ffmpeg-4.3.2::gentoo
+# required by gui-apps/wf-recorder-0.2.1-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=x11-libs/libXrandr-1.5.2 abi_x86_32
+# required by x11-libs/libXrandr-1.5.2::gentoo
+# required by media-libs/mesa-20.2.6::gentoo[X]
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo[wayland]
+# required by x11-libs/libva-2.7.1::gentoo[video_cards_intel,-video_cards_i965]
+# required by media-video/ffmpeg-4.3.2::gentoo
+# required by gui-apps/wf-recorder-0.2.1-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=x11-libs/libXrender-0.9.10-r2 abi_x86_32
+# required by sys-devel/llvm-11.0.1::gentoo[libffi]
+# required by media-libs/mesa-20.2.6::gentoo[-video_cards_r600,llvm,gallium,video_cards_radeonsi,-video_cards_radeon,-opencl]
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo[wayland]
+# required by x11-libs/libva-2.7.1::gentoo[video_cards_intel,-video_cards_i965]
+# required by media-video/ffmpeg-4.3.2::gentoo
+# required by gui-apps/wf-recorder-0.2.1-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-libs/libffi-3.3-r2 abi_x86_32
+# required by sys-devel/llvm-11.0.1::gentoo[ncurses]
+# required by media-libs/mesa-20.2.6::gentoo[-video_cards_r600,llvm,gallium,video_cards_radeonsi,-video_cards_radeon,-opencl]
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo[wayland]
+# required by x11-libs/libva-2.7.1::gentoo[video_cards_intel,-video_cards_i965]
+# required by media-video/ffmpeg-4.3.2::gentoo
+# required by gui-apps/wf-recorder-0.2.1-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=sys-libs/ncurses-6.2-r1 abi_x86_32
+# required by sys-devel/llvm-11.0.1::gentoo[xml]
+# required by media-libs/mesa-20.2.6::gentoo[-video_cards_r600,llvm,gallium,video_cards_radeonsi,-video_cards_radeon,-opencl]
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo[wayland]
+# required by x11-libs/libva-2.7.1::gentoo[video_cards_intel,-video_cards_i965]
+# required by media-video/ffmpeg-4.3.2::gentoo
+# required by gui-apps/wf-recorder-0.2.1-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-libs/libxml2-2.9.10-r4 abi_x86_32
+# required by dev-libs/libxml2-2.9.10-r4::gentoo[icu]
+# required by x11-base/xcb-proto-1.14.1::gentoo
+# required by x11-libs/libxcb-1.14::gentoo
+# required by media-libs/mesa-20.2.6::gentoo[X]
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo[wayland]
+# required by x11-libs/libva-2.7.1::gentoo[video_cards_intel,-video_cards_i965]
+# required by media-video/ffmpeg-4.3.2::gentoo
+# required by gui-apps/wf-recorder-0.2.1-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-libs/icu-68.2 abi_x86_32
+# required by x11-libs/libdrm-2.4.103::gentoo[video_cards_intel]
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo
+# required by x11-libs/libva-2.7.1::gentoo[video_cards_intel,-video_cards_i965]
+# required by media-libs/mesa-20.2.6::gentoo[vaapi,gallium]
+# required by virtual/opengl-7.0-r2::gentoo
+# required by games-util/steam-launcher-1.0.0.68::steam-overlay[steamruntime]
+# required by games-util/steam-launcher (argument)
+>=x11-libs/libpciaccess-0.16 abi_x86_32
+# required by x11-libs/libva-2.7.1::gentoo[video_cards_intel,-video_cards_i965]
+# required by media-libs/mesa-20.2.6::gentoo[vaapi,gallium]
+# required by virtual/opengl-7.0-r2::gentoo
+# required by games-util/steam-launcher-1.0.0.68::steam-overlay[steamruntime]
+# required by games-util/steam-launcher (argument)
+>=x11-libs/libva-intel-driver-2.4.1 abi_x86_32
+# required by media-libs/mesa-20.2.6::gentoo[-video_cards_r600,llvm,gallium,video_cards_radeonsi,-video_cards_radeon,-opencl]
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo[wayland]
+# required by x11-libs/libva-2.7.1::gentoo[video_cards_intel,-video_cards_i965]
+# required by media-video/ffmpeg-4.3.2::gentoo
+# required by gui-apps/wf-recorder-0.2.1-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=virtual/libelf-3 abi_x86_32
+# required by virtual/libelf-3::gentoo
+# required by media-libs/mesa-20.2.6::gentoo[-video_cards_r600,llvm,gallium,video_cards_radeonsi,-video_cards_radeon,-opencl]
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo[wayland]
+# required by x11-libs/libva-2.7.1::gentoo[video_cards_intel,-video_cards_i965]
+# required by media-video/ffmpeg-4.3.2::gentoo
+# required by gui-apps/wf-recorder-0.2.1-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-libs/elfutils-0.182 abi_x86_32
+# required by dev-libs/elfutils-0.182::gentoo[bzip2]
+# required by virtual/libelf-3::gentoo
+# required by media-libs/mesa-20.2.6::gentoo[-video_cards_r600,llvm,gallium,video_cards_radeonsi,-video_cards_radeon,-opencl]
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo[wayland]
+# required by x11-libs/libva-2.7.1::gentoo[video_cards_intel,-video_cards_i965]
+# required by media-video/ffmpeg-4.3.2::gentoo
+# required by gui-apps/wf-recorder-0.2.1-r1::gentoo
+# required by @selected
+# required by @world (argument)
+>=app-arch/bzip2-1.0.6-r11 abi_x86_32
+# required by media-video/mpv-0.33.0-r100::gentoo
+# required by media-video/celluloid-0.20::gentoo
+# required by celluloid (argument)
+>=media-libs/libass-0.15.0 fontconfig
+# required by media-sound/pulseaudio-13.0-r1::gentoo
+# required by media-plugins/alsa-plugins-1.2.2::gentoo[pulseaudio]
+>=media-libs/libsndfile-1.0.30 abi_x86_32
+# required by media-sound/pulseaudio-13.0-r1::gentoo[X]
+# required by media-plugins/alsa-plugins-1.2.2::gentoo[pulseaudio]
+>=x11-libs/libSM-1.2.3-r1 abi_x86_32
+# required by x11-libs/libSM-1.2.3-r1::gentoo
+# required by media-sound/pulseaudio-13.0-r1::gentoo[X]
+# required by media-plugins/alsa-plugins-1.2.2::gentoo[pulseaudio]
+>=x11-libs/libICE-1.0.10 abi_x86_32
+# required by media-sound/pulseaudio-13.0-r1::gentoo[X]
+# required by media-plugins/alsa-plugins-1.2.2::gentoo[pulseaudio]
+>=x11-libs/libXtst-1.2.3-r2 abi_x86_32
+# required by sys-apps/systemd-247.2-r4::gentoo
+# required by sys-apps/dbus-1.12.20-r1::gentoo[systemd]
+# required by media-sound/pulseaudio-13.0-r1::gentoo[dbus]
+# required by media-plugins/alsa-plugins-1.2.2::gentoo[pulseaudio]
+>=sys-libs/libcap-2.43 abi_x86_32
+# required by media-sound/pulseaudio-13.0-r1::gentoo[glib]
+# required by media-plugins/alsa-plugins-1.2.2::gentoo[pulseaudio]
+>=dev-libs/glib-2.66.7 abi_x86_32
+# required by media-sound/pulseaudio-13.0-r1::gentoo[tcpd]
+# required by media-plugins/alsa-plugins-1.2.2::gentoo[pulseaudio]
+>=sys-apps/tcp-wrappers-7.6.28 abi_x86_32
+# required by media-sound/pulseaudio-13.0-r1::gentoo[dbus]
+# required by media-plugins/alsa-plugins-1.2.2::gentoo[pulseaudio]
+>=sys-apps/dbus-1.12.20-r1 abi_x86_32
+# required by media-sound/pulseaudio-13.0-r1::gentoo[asyncns]
+# required by media-plugins/alsa-plugins-1.2.2::gentoo[pulseaudio]
+>=net-libs/libasyncns-0.8-r4 abi_x86_32
+# required by media-sound/pulseaudio-13.0-r1::gentoo[systemd]
+# required by media-plugins/alsa-plugins-1.2.2::gentoo[pulseaudio]
+>=sys-apps/systemd-247.2-r4 abi_x86_32
+# required by media-sound/pulseaudio-13.0-r1::gentoo[alsa,alsa-plugin]
+# required by @selected
+# required by @world (argument)
+>=media-plugins/alsa-plugins-1.2.2 abi_x86_32
+# required by media-plugins/alsa-plugins-1.2.2::gentoo
+# required by media-sound/pulseaudio-13.0-r1::gentoo[alsa,alsa-plugin]
+# required by @selected
+# required by @world (argument)
+>=media-libs/alsa-lib-1.2.3.2-r1 abi_x86_32
+# required by sys-apps/systemd-247.2-r4::gentoo
+# required by sys-apps/dbus-1.12.20-r1::gentoo[systemd]
+# required by media-sound/pulseaudio-13.0-r1::gentoo[dbus]
+# required by media-plugins/alsa-plugins-1.2.2::gentoo[pulseaudio]
+>=sys-apps/util-linux-2.35.2 abi_x86_32
+# required by sys-apps/systemd-247.2-r4::gentoo[gcrypt]
+# required by sys-apps/dbus-1.12.20-r1::gentoo[systemd]
+# required by media-sound/pulseaudio-13.0-r1::gentoo[dbus]
+# required by media-plugins/alsa-plugins-1.2.2::gentoo[pulseaudio]
+>=dev-libs/libgcrypt-1.8.6 abi_x86_32
+# required by sys-apps/systemd-247.2-r4::gentoo[lz4]
+# required by sys-apps/dbus-1.12.20-r1::gentoo[systemd]
+# required by media-sound/pulseaudio-13.0-r1::gentoo[dbus]
+# required by media-plugins/alsa-plugins-1.2.2::gentoo[pulseaudio]
+>=app-arch/lz4-1.9.3 abi_x86_32
+# required by sys-apps/systemd-247.2-r4::gentoo[pam]
+# required by sys-apps/dbus-1.12.20-r1::gentoo[systemd]
+# required by media-sound/pulseaudio-13.0-r1::gentoo[dbus]
+# required by media-plugins/alsa-plugins-1.2.2::gentoo[pulseaudio]
+>=sys-libs/pam-1.5.1 abi_x86_32
+# required by sys-libs/pam-1.5.1::gentoo[berkdb]
+# required by sys-libs/libcap-2.43::gentoo[pam]
+# required by sys-apps/systemd-247.2-r4::gentoo
+# required by sys-apps/dbus-1.12.20-r1::gentoo[systemd]
+# required by media-sound/pulseaudio-13.0-r1::gentoo[dbus]
+# required by media-plugins/alsa-plugins-1.2.2::gentoo[pulseaudio]
+>=sys-libs/db-5.3.28-r4:5.3 abi_x86_32
+# required by dev-libs/libgcrypt-1.8.6::gentoo
+# required by sys-apps/systemd-247.2-r4::gentoo[gcrypt]
+# required by sys-apps/dbus-1.12.20-r1::gentoo[systemd]
+# required by media-sound/pulseaudio-13.0-r1::gentoo[dbus]
+# required by media-plugins/alsa-plugins-1.2.2::gentoo[pulseaudio]
+>=dev-libs/libgpg-error-1.38 abi_x86_32
+# required by dev-libs/glib-2.66.7::gentoo
+# required by media-sound/pulseaudio-13.0-r1::gentoo[glib]
+# required by media-plugins/alsa-plugins-1.2.2::gentoo[pulseaudio]
+>=dev-libs/libpcre-8.44 abi_x86_32
+# required by sys-libs/libcap-2.43::gentoo
+# required by sys-libs/pam-1.5.1::gentoo[filecaps]
+# required by sys-apps/util-linux-2.35.2::gentoo[pam]
+# required by x11-libs/libSM-1.2.3-r1::gentoo[uuid]
+# required by media-sound/pulseaudio-13.0-r1::gentoo[X]
+# required by media-plugins/alsa-plugins-1.2.2::gentoo[pulseaudio]
+>=sys-apps/attr-2.4.48-r4 abi_x86_32
+# required by x11-libs/libXtst-1.2.3-r2::gentoo
+# required by media-sound/pulseaudio-13.0-r1::gentoo[X]
+# required by media-plugins/alsa-plugins-1.2.2::gentoo[pulseaudio]
+>=x11-libs/libXi-1.7.10 abi_x86_32
+# required by media-libs/libsndfile-1.0.30::gentoo[-minimal]
+# required by media-sound/pulseaudio-13.0-r1::gentoo
+# required by media-plugins/alsa-plugins-1.2.2::gentoo[pulseaudio]
+>=media-libs/flac-1.3.3-r1 abi_x86_32
+# required by media-libs/flac-1.3.3-r1::gentoo[ogg]
+# required by media-libs/libsndfile-1.0.30::gentoo[-minimal]
+# required by media-sound/pulseaudio-13.0-r1::gentoo
+# required by media-plugins/alsa-plugins-1.2.2::gentoo[pulseaudio]
+>=media-libs/libogg-1.3.4 abi_x86_32
+# required by media-libs/libsndfile-1.0.30::gentoo[-minimal]
+# required by media-sound/pulseaudio-13.0-r1::gentoo
+# required by media-plugins/alsa-plugins-1.2.2::gentoo[pulseaudio]
+>=media-libs/libvorbis-1.3.7 abi_x86_32
+# required by media-libs/libsndfile-1.0.30::gentoo[-minimal]
+# required by media-sound/pulseaudio-13.0-r1::gentoo
+# required by media-plugins/alsa-plugins-1.2.2::gentoo[pulseaudio]
+>=media-libs/opus-1.3.1-r1 abi_x86_32
+# required by dev-libs/glib-2.66.7::gentoo
+# required by media-sound/pulseaudio-13.0-r1::gentoo[glib]
+# required by media-plugins/alsa-plugins-1.2.2::gentoo[pulseaudio]
+>=virtual/libiconv-0-r2 abi_x86_32
+# required by dev-libs/glib-2.66.7::gentoo
+# required by media-sound/pulseaudio-13.0-r1::gentoo[glib]
+# required by media-plugins/alsa-plugins-1.2.2::gentoo[pulseaudio]
+>=virtual/libintl-0-r2 abi_x86_32
+# required by sys-libs/pam-1.5.1::gentoo
+# required by sys-libs/libcap-2.43::gentoo[pam]
+# required by sys-apps/systemd-247.2-r4::gentoo
+# required by sys-apps/dbus-1.12.20-r1::gentoo[systemd]
+# required by media-sound/pulseaudio-13.0-r1::gentoo[dbus]
+# required by media-plugins/alsa-plugins-1.2.2::gentoo[pulseaudio]
+>=virtual/libcrypt-1-r1 abi_x86_32
+# required by media-libs/openal-1.21.0::gentoo[sdl]
+# required by openal (argument)
+>=media-libs/libsdl2-2.0.12-r2 abi_x86_32
+# required by media-libs/libsdl2-2.0.12-r2::gentoo[wayland]
+# required by media-libs/openal-1.21.0::gentoo[sdl]
+# required by openal (argument)
+>=x11-libs/libxkbcommon-1.0.3 abi_x86_32
+# required by media-libs/libsdl2-2.0.12-r2::gentoo[X]
+# required by media-libs/openal-1.21.0::gentoo[sdl]
+# required by openal (argument)
+>=x11-libs/libXcursor-1.2.0 abi_x86_32
+# required by media-libs/libsdl2-2.0.12-r2::gentoo[X,xinerama]
+# required by media-libs/openal-1.21.0::gentoo[sdl]
+# required by openal (argument)
+>=x11-libs/libXinerama-1.1.4-r1 abi_x86_32
+# required by media-libs/libsdl2-2.0.12-r2::gentoo[opengl]
+# required by media-libs/openal-1.21.0::gentoo[sdl]
+# required by openal (argument)
+>=virtual/glu-9.0-r2 abi_x86_32
+# required by media-libs/libsdl2-2.0.12-r2::gentoo[udev]
+# required by media-libs/openal-1.21.0::gentoo[sdl]
+# required by openal (argument)
+>=virtual/libudev-232-r3 abi_x86_32
+# required by virtual/glu-9.0-r2::gentoo
+# required by media-libs/libsdl2-2.0.12-r2::gentoo[opengl]
+# required by media-libs/openal-1.21.0::gentoo[sdl]
+# required by openal (argument)
+>=media-libs/glu-9.0.1 abi_x86_32

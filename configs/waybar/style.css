@@ -1,0 +1,62 @@
+* {
+    font-family: "Font Awesome 5 Free";
+    font-size: 14px;
+    min-height: 28px;
+}
+
+window#waybar {
+background: black
+}
+
+#window {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    transition: none;
+    color: black;
+    background: black;
+}
+
+#tray,
+#taskbar,
+#network,
+#pulseaudio,
+#temperature,
+#clock,
+#backlight,
+#battery {
+    margin: 1px;
+    padding-left: 2px;
+    padding-right: 2px;
+    transition: none;
+    background: #111111;
+    color: #ffffff;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+#network {
+    color: #ffffff;
+    background: #111111;
+}
+
+#backlight {
+    color: #ffffff;
+    background: #111111;
+}
+
+#pulseaudio {
+    color: #ffffff;
+    background: #111111;
+}
+
+#temperature {
+    color: #ffffff;
+    background: #111111;
+}
+
+#clock {
+    color: #ffffff;
+    background: #111111;
+}

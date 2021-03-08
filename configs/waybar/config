@@ -1,0 +1,63 @@
+{
+  "layer": "top",
+  "height": "28px",
+  "position": "bottom",
+  "modules-left": ["wlr/taskbar"],
+  "modules-center": [],
+  "modules-right": ["tray", "pulseaudio", "network", "temperature", "backlight", "battery", "clock"],
+  "tray": {
+    "icon-size": 20,
+    "spacing": 5,
+  },
+  "wlr/taskbar": {
+    "format": "{icon} {title:.32}",
+    "icon-size": 20,
+    "icon-theme": "Reversal-red-dark",
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-right": "minimize",
+    "on-click-middle": "close",
+  },
+  "network": {
+    "tooltip": true,
+    "tooltip-format": "{essid} ({ipaddr})",
+    "tooltip-format-ethernet": "{ipaddr}",
+    "tooltip-format-diconnected": "Disconnected",
+    "format-wifi": "{essid} ({signalStrength}%)",
+    "format-ethernet": "eth",
+    "format-disconnected": "Disconnected",
+  },
+  "pulseaudio": {
+    "tooltip": false,
+    "on-click": "pavucontrol",
+    "scroll-step": 5,
+    "format": "{icon} ({volume}%)",
+    "format-bluetooth": "{icon}BL” ({volume}%)",
+    "format-muted": "🕨 ({volume}%)",
+    "format-icons": {
+      "default": ["🕪", "🕪"],
+    },
+  },
+  "battery": {
+    "tooltip": false,
+    "bat": "BAT0",
+    "interval": 60,
+    "states": {
+      "warning": 30,
+      "critical": 15,
+    },
+    "format": "BATT ({capacity}%)"
+  },
+    "backlight": {
+        "format": "{icon} {percent}%",
+        "format-icons": {"default": ["☀"],},
+        "on-scroll-up": "light -A 5",
+        "on-scroll-down": "light -U 5"
+  },
+    "clock": {
+        "interval": 1,
+        "format": "{:%A %d %B %H:%M:%S}",
+        "tooltip": true,
+        "tooltip-format": "<big>{:%B %Y}</big>\n<tt>{calendar}</tt>"
+  }
+}
