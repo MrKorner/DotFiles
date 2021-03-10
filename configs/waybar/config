@@ -32,7 +32,7 @@
     "on-click": "pavucontrol",
     "scroll-step": 5,
     "format": "{icon} ({volume}%)",
-    "format-bluetooth": "{icon}BL” ({volume}%)",
+    "format-bluetooth": "{icon}BL ({volume}%)",
     "format-muted": "🕨 ({volume}%)",
     "format-icons": {
       "default": ["🕪", "🕪"],

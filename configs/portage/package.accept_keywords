@@ -35,3 +35,7 @@ net-misc/freetube-bin ~amd64
 =x11-misc/menulibre-2.2.1-r2 ~amd64
 # required by ipscan-bin (argument)
 =net-analyzer/ipscan-bin-3.7.4 ~amd64
+# required by vrms-gentoo (argument)
+=app-misc/vrms-gentoo-0_pre20181120 ~amd64
+# required by wofi (argument)
+=gui-apps/wofi-1.2.4 ~amd64
