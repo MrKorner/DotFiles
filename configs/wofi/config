@@ -1,0 +1,5 @@
+allow_images=true
+insensitive=true
+term=kitty
+prompt=Search
+

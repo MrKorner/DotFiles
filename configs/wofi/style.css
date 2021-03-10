@@ -1,0 +1,22 @@
+
+#window {
+  background-color: rgba(0, 0, 0, 1);
+  border: 2px solid red;
+}
+
+#input {
+  background-color: black;
+  border-radius: 2px;
+  border: none;
+  color: white;
+}
+
+#inner-box {
+  margin: 0px;
+}
+
+#outer-box {
+  background-color: rgba(0, 0, 0, 1);
+  border: 3px solid red;
+}
+
