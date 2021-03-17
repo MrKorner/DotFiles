@@ -43,3 +43,5 @@ net-misc/freetube-bin ~amd64
 =sys-apps/corectrl-1.0.7 ~amd64
 # required by =corectrl-9999 (argument)
 =sys-apps/corectrl-9999 **
+# required by ufetch (argument)
+=app-misc/ufetch-0.2 ~amd64

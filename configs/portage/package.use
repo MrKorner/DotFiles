@@ -1,33 +1,21 @@
 app-emulation/wine-vanilla -sql -unwind -samba -lcms -realtime -faudio
+www-client/w3m -imlib
+app-arch/p7zip -wxwidgets
 app-text/qpdfview -sqlite
-app-editors/vim python terminal
 net-print/cups -usb -threads -acl -ssl
-mate-base/caja -mate
 media-libs/vulkan-loader abi_x86_32 layers
-app-text/xpdf -libpaper metric cmyk
-media-gfx/nomacs -opencv -tiff
 media-gfx/gthumb -cdr -tiff -lcms
-net-wireless/blueman appindicator
 games-util/steam-client-meta steamfonts trayicon
 sys-apps/portage gentoo-dev
 media-libs/openal abi_x86_32
 sys-fs/lvm2 -thin
 media-sound/pulseaudio abi_x86_32
-sys-fs/udisks -lvm
-dev-lang/ruby -rdoc -berkdb -gdbm 
-net-libs/webkit-gtk -geolocation -jpeg2k 
 media-libs/libcanberra -gtk
-net-print/cups-filters -pdf -tiff -jpeg -postscript -png -foomatic
-app-text/evince -gnome -nautilus -tiff
-app-arch/file-roller -nautilus
-xfce-base/thunar -pcre -trash-panel-plugin
 net-misc/remmina rdp appindicator
 media-sound/deadbeef wavpack -supereq ffmpeg
-net-firewall/firewalld -gui
 sys-boot/grub -themes mount
 sys-auth/polkit gtk -kde
 net-wireless/bluez user-session
-media-fonts/fontawesome ttf
 sys-apps/dbus user-session
 gui-libs/wlroots iccm x11-backend seatd
 gui-apps/waybar network popups tray wifi
@@ -44,28 +32,22 @@ sys-block/gparted cryptsetup fat ntfs
 media-video/ffmpeg -vdpau twolame speex openh264 openal lzma codec2 amr vpx wavpack
 media-video/mpv -cli -samba -luajit -luaa libmpv
 net-p2p/transmission gtk -qt5
-sys-apps/gnome-disk-utility fat -gnome
 app-crypt/gcr gtk
 sys-devel/gcc graphite
 net-wireless/wpa_supplicant -qt5 dbus
 x11-libs/libdrm video_cards_radeon
-sys-apps/lshw gtk
 dev-lang/rust system-llvm llvm_targets_AMDGPU system-bootstrap
 app-crypt/pinentry gnome-keyring 
-gnome-base/gvfs archive nfs samba mtp policykit -cdda udisks 
+gnome-base/gvfs archive nfs samba mtp -cdda -udisks 
 sys-libs/libblockdev -lvm
 media-libs/mesa llvm video_cards_iris video_cards_radeonsi d3d9  vaapi
-app-arch/p7zip -wxwidgets -kde
-www-client/w3m imlib
 sys-libs/ncurses -gpm
-media-gfx/darktable -colord
 media-libs/phonon -vlc
 media-libs/libsdl2 gles2
 x11-libs/gtk+ -colord
 media-gfx/fontforge -gtk 
 >=sys-apps/dbus-1.12.18 user-session
 net-misc/networkmanager -bluetooth -modemmanager -ppp
-media-fonts/cantarell font_types_otf
 >=media-libs/libvpx-1.9.0 postproc
 >=media-video/ffmpeg-4.3.1 vdpau vaapi x265
 >=dev-util/ostree-2020.6 curl
@@ -94,12 +76,6 @@ media-fonts/cantarell font_types_otf
 # required by x11-libs/libva-intel-driver-2.4.1::gentoo
 # required by dev-python/PyQt5-5.15.2::gentoo[multimedia]
 # required by net-firewall/firewalld-0.7.1-r3::gentoo[python_single_target_python3_8,gui]
-# required by @selected
-# required by @world (argument)
->=dev-qt/qtmultimedia-5.15.2 widgets
-# required by sys-fs/udisks-2.9.1::gentoo
-# required by gnome-base/gvfs-1.44.1::gentoo[udisks]
-# required by app-editors/gedit-3.36.2::gentoo
 # required by @selected
 # required by @world (argument)
 >=sys-libs/libblockdev-2.24 vdo

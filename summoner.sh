@@ -7,7 +7,6 @@ cp -r ~/.config/kitty ./configs/ &&
 cp -r ~/.config/gtk-3.0/ ./configs &&
 cp -r ~/.bashrc ./configs/ &&
 cp -r ~/.config/wofi/ ./configs/ &&
-cp -r ~/.config/neofetch/ ./configs/ &&
 cp /etc/nanorc ./configs/ &&
 cp /etc/samba/smb.conf ./configs/ &&
 cp -r ~/.config/mc ./configs/ &&
