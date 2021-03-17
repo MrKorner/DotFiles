@@ -1,3 +1,6 @@
+app-emulation/wine-vanilla -sql -unwind -samba -lcms -realtime -faudio
+app-text/qpdfview -sqlite
+app-editors/vim python terminal
 net-print/cups -usb -threads -acl -ssl
 mate-base/caja -mate
 media-libs/vulkan-loader abi_x86_32 layers
@@ -19,7 +22,7 @@ app-text/evince -gnome -nautilus -tiff
 app-arch/file-roller -nautilus
 xfce-base/thunar -pcre -trash-panel-plugin
 net-misc/remmina rdp appindicator
-media-sound/deadbeef -dts wavpack -supereq ffmpeg
+media-sound/deadbeef wavpack -supereq ffmpeg
 net-firewall/firewalld -gui
 sys-boot/grub -themes mount
 sys-auth/polkit gtk -kde
@@ -523,3 +526,68 @@ media-fonts/cantarell font_types_otf
 # required by @selected
 # required by @world (argument)
 >=dev-util/wayland-scanner-1.19.0 abi_x86_32
+# required by app-text/qpdfview-0.4.18::gentoo[pdf]
+# required by qpdfview (argument)
+>=app-text/poppler-21.02.0 qt5
+# required by app-emulation/wine-vanilla-6.0::gentoo[mp3]
+# required by wine-vanilla (argument)
+>=media-sound/mpg123-1.26.3 abi_x86_32
+# required by app-emulation/wine-vanilla-6.0::gentoo[nls]
+# required by wine-vanilla (argument)
+>=sys-devel/gettext-0.21 abi_x86_32
+# required by app-emulation/wine-vanilla-6.0::gentoo[png]
+# required by wine-vanilla (argument)
+>=media-libs/libpng-1.6.37-r2 abi_x86_32
+# required by app-emulation/wine-vanilla-6.0::gentoo[sdl]
+# required by wine-vanilla (argument)
+>=media-libs/libsdl2-2.0.12-r2 haptic
+# required by app-emulation/wine-vanilla-6.0::gentoo[ssl]
+# required by wine-vanilla (argument)
+>=net-libs/gnutls-3.6.15 abi_x86_32
+# required by app-emulation/wine-vanilla-6.0::gentoo[truetype]
+# required by wine-vanilla (argument)
+>=media-libs/freetype-2.10.4 abi_x86_32
+# required by app-emulation/wine-vanilla-6.0::gentoo[xcomposite]
+# required by wine-vanilla (argument)
+>=x11-libs/libXcomposite-0.4.5 abi_x86_32
+# required by app-emulation/wine-vanilla-6.0::gentoo[xml]
+# required by wine-vanilla (argument)
+>=dev-libs/libxslt-1.1.34-r1 abi_x86_32
+# required by app-emulation/wine-vanilla-6.0::gentoo[gecko]
+# required by wine-vanilla (argument)
+>=app-emulation/wine-gecko-2.47.2 abi_x86_32
+# required by net-libs/gnutls-3.6.15::gentoo
+# required by app-emulation/wine-vanilla-6.0::gentoo[ssl]
+# required by wine-vanilla (argument)
+>=dev-libs/libtasn1-4.16.0 abi_x86_32
+# required by net-libs/gnutls-3.6.15::gentoo
+# required by app-emulation/wine-vanilla-6.0::gentoo[ssl]
+# required by wine-vanilla (argument)
+>=dev-libs/libunistring-0.9.10 abi_x86_32
+# required by net-libs/gnutls-3.6.15::gentoo
+# required by app-emulation/wine-vanilla-6.0::gentoo[ssl]
+# required by wine-vanilla (argument)
+>=dev-libs/nettle-3.6-r2 abi_x86_32
+# required by dev-libs/nettle-3.6-r2::gentoo[gmp]
+# required by net-libs/gnutls-3.6.15::gentoo
+# required by app-emulation/wine-vanilla-6.0::gentoo[ssl]
+# required by wine-vanilla (argument)
+>=dev-libs/gmp-6.2.1 abi_x86_32
+# required by net-libs/gnutls-3.6.15::gentoo[idn]
+# required by app-emulation/wine-vanilla-6.0::gentoo[ssl]
+# required by wine-vanilla (argument)
+>=net-dns/libidn2-2.3.0 abi_x86_32
+# required by app-emulation/wine-vanilla-6.0::gentoo[jpeg]
+# required by wine-vanilla (argument)
+>=virtual/jpeg-100 abi_x86_32
+# required by app-emulation/wine-vanilla-6.0::gentoo[usb]
+# required by wine-vanilla (argument)
+>=virtual/libusb-1-r2 abi_x86_32
+# required by virtual/libusb-1-r2::gentoo
+# required by app-emulation/wine-vanilla-6.0::gentoo[usb]
+# required by wine-vanilla (argument)
+>=dev-libs/libusb-1.0.23-r1 abi_x86_32
+# required by virtual/jpeg-100::gentoo
+# required by app-emulation/wine-vanilla-6.0::gentoo[jpeg]
+# required by wine-vanilla (argument)
+>=media-libs/libjpeg-turbo-2.0.6 abi_x86_32

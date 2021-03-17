@@ -39,3 +39,7 @@ net-misc/freetube-bin ~amd64
 =app-misc/vrms-gentoo-0_pre20181120 ~amd64
 # required by wofi (argument)
 =gui-apps/wofi-1.2.4 ~amd64
+# required by corectrl (argument)
+=sys-apps/corectrl-1.0.7 ~amd64
+# required by =corectrl-9999 (argument)
+=sys-apps/corectrl-9999 **

@@ -9,4 +9,6 @@ cp -r ~/.bashrc ./configs/ &&
 cp -r ~/.config/wofi/ ./configs/ &&
 cp -r ~/.config/neofetch/ ./configs/ &&
 cp /etc/nanorc ./configs/ &&
+cp /etc/samba/smb.conf ./configs/ &&
+cp -r ~/.config/mc ./configs/ &&
 echo ":)"
