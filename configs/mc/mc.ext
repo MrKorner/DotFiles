@@ -728,8 +728,7 @@ shell/i/.lyx
 # torrent
 shell/i/.torrent
 	View=%view{ascii} /usr/libexec/mc/ext.d/misc.sh view torrent
-
-
+	Open=/usr/bin/transmission-gtk
 ### Plain compressed files ###
 
 # ace
@@ -757,7 +756,7 @@ type/i/^zip\ archive
 
 # jar(zip)
 type/i/^Java\ (Jar\ file|archive)\ data\ \((zip|JAR)\)
-	Open=%cd %p/uzip://
+	Open=java -jar
 	View=%view{ascii} /usr/libexec/mc/ext.d/archive.sh view zip
 
 # zoo

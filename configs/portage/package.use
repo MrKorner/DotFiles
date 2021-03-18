@@ -1,4 +1,4 @@
-app-emulation/wine-vanilla -sql -unwind -samba -lcms -realtime -faudio
+app-emulation/wine-vanilla -sql -unwind -samba -lcms -realtime openal osmesa faudio
 www-client/w3m -imlib
 app-arch/p7zip -wxwidgets
 app-text/qpdfview -sqlite
@@ -14,7 +14,7 @@ media-libs/libcanberra -gtk
 net-misc/remmina rdp appindicator
 media-sound/deadbeef wavpack -supereq ffmpeg
 sys-boot/grub -themes mount
-sys-auth/polkit gtk -kde
+sys-auth/polkit -gtk -kde
 net-wireless/bluez user-session
 sys-apps/dbus user-session
 gui-libs/wlroots iccm x11-backend seatd
@@ -567,3 +567,10 @@ net-misc/networkmanager -bluetooth -modemmanager -ppp
 # required by app-emulation/wine-vanilla-6.0::gentoo[jpeg]
 # required by wine-vanilla (argument)
 >=media-libs/libjpeg-turbo-2.0.6 abi_x86_32
+# required by sys-auth/polkit-0.118::gentoo[systemd]
+# required by polkit (argument)
+>=sys-apps/systemd-247.2-r4 policykit
+# required by app-emulation/wine-vanilla-6.0::gentoo[osmesa]
+# required by @selected
+# required by @world (argument)
+>=media-libs/mesa-20.3.4 osmesa

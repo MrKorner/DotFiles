@@ -12,7 +12,7 @@
   "wlr/taskbar": {
     "format": "{icon} {title:.32}",
     "icon-size": 20,
-    "icon-theme": "Reversal-red-dark",
+    "icon-theme": "Flat-Remix-Red-Dark",
     "tooltip-format": "{title}",
     "on-click": "activate",
     "on-click-right": "minimize",

@@ -1,0 +1,3 @@
+ENTRY "/home/korner" URL "/home/korner"
+ENTRY "/mnt/Data" URL "/mnt/Data"
+ENTRY "/smb://o2smartbox" URL "/smb://o2smartbox"

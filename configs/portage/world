@@ -19,12 +19,13 @@ app-text/tree
 app-text/wgetpaste
 dev-libs/light
 dev-util/ccache
-dev-util/geany
 dev-util/strace
 dev-vcs/git
 games-action/multimc
 games-util/steam-meta
+gnome-base/dconf-editor
 gnome-base/gvfs
+gnome-extra/polkit-gnome
 gui-apps/grim
 gui-apps/slurp
 gui-apps/swaylock
@@ -61,6 +62,8 @@ sys-apps/mlocate
 sys-apps/portage
 sys-apps/systemd
 sys-apps/usbutils
+sys-auth/polkit
+sys-block/zram-init
 sys-boot/grub:2
 sys-fs/cryptsetup
 sys-fs/dosfstools
