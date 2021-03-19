@@ -33,9 +33,9 @@
     "scroll-step": 5,
     "format": "{icon} ({volume}%)",
     "format-bluetooth": "{icon}BL ({volume}%)",
-    "format-muted": "🕨 ({volume}%)",
+    "format-muted": "🔈 ({volume}%)",
     "format-icons": {
-      "default": ["🕪", "🕪"],
+      "default": ["🔉", "🔊"],
     },
   },
   "battery": {
