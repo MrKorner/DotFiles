@@ -14,7 +14,6 @@ app-portage/gentoolkit
 app-portage/repoman
 app-shells/bash-completion
 app-shells/gentoo-bashcomp
-app-text/qpdfview
 app-text/tree
 app-text/wgetpaste
 dev-libs/light
@@ -41,14 +40,11 @@ gui-wm/wayfire
 media-fonts/noto
 media-fonts/noto-cjk
 media-fonts/noto-emoji
-media-gfx/gthumb
 media-sound/deadbeef
 media-sound/pavucontrol
 media-video/celluloid
 net-analyzer/ipscan-bin
-net-im/gomuks
 net-misc/networkmanager
-net-misc/remmina
 net-misc/youtube-dl
 net-p2p/transmission
 net-wireless/bluez
@@ -56,14 +52,10 @@ net-wireless/wireless-tools
 sci-calculators/galculator
 sys-apps/dbus
 sys-apps/flatpak
-sys-apps/hwinfo
 sys-apps/lm-sensors
 sys-apps/mlocate
-sys-apps/portage
-sys-apps/systemd
 sys-apps/usbutils
 sys-auth/polkit
-sys-block/zram-init
 sys-boot/grub:2
 sys-fs/cryptsetup
 sys-fs/dosfstools
