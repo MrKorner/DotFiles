@@ -19,7 +19,7 @@
 ## Automatically indent a newly created line to the same number of
 ## tabs and/or spaces as the preceding line -- or as the next line
 ## if the preceding line is the beginning of a paragraph.
- set autoindent
+# set autoindent
 
 ## Back up files to the current filename plus a tilde.
 # set backup
@@ -36,7 +36,7 @@
 ## The characters treated as closing brackets when justifying paragraphs.
 ## This may not include any blank characters.  Only closing punctuation,
 ## optionally followed by these closing brackets, can end sentences.
-#set brackets ""')>]}"
+# set brackets ""')>]}"
 
 ## Automatically hard-wrap the current line when it becomes overlong.
 # set breaklonglines
@@ -52,7 +52,7 @@
 # set cutfromcursor
 
 ## Do not use the line below the title bar, leaving it entirely blank.
- set emptyline
+# set emptyline
 
 ## Set the target width for automatic hard-wrapping and for justifying
 ## paragraphs.  If the specified value is 0 or less, the wrapping point
@@ -69,7 +69,7 @@
 # set jumpyscrolling
 
 ## Display line numbers to the left (and any anchors in the margin).
- set linenumbers
+# set linenumbers
 
 ## Enable vim-style lock-files.  This is just to let a vim user know you
 ## are editing a file [s]he is trying to edit and vice versa.  There are
@@ -82,7 +82,7 @@
 ## The opening and closing brackets that can be found by bracket
 ## searches.  They cannot contain blank characters.  The former set must
 ## come before the latter set, and both must be in the same order.
- set matchbrackets "(<[{)>]}"
+# set matchbrackets "(<[{)>]}"
 
 ## Enable mouse support, if available for your system.  When enabled,
 ## mouse clicks can be used to place the cursor, set the mark (with a

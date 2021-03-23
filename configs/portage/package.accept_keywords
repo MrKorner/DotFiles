@@ -1,3 +1,5 @@
+app-accessibility/caribou ~amd64
+gnome-extra/cinnamon ~amd64
 sys-apps/intel-power-control **
 gui-wm/wayfire ~amd64
 gui-apps/wcm ~amd64
@@ -45,3 +47,71 @@ net-misc/freetube-bin ~amd64
 =sys-apps/corectrl-9999 **
 # required by ufetch (argument)
 =app-misc/ufetch-0.2 ~amd64
+# required by @selected
+# required by @world (argument)
+=dev-libs/light-1.2.2-r1 ~amd64
+# required by @selected
+# required by @world (argument)
+=x11-terms/kitty-0.19.3 ~amd64
+# required by gui-apps/waybar-0.9.5::gentoo
+# required by @selected
+# required by @world (argument)
+=dev-libs/date-3.0.0 ~amd64
+# required by gui-wm/wayfire-0.7.0::gentoo[system-wfconfig]
+# required by gui-apps/wcm-0.7.0::gentoo
+# required by @selected
+# required by @world (argument)
+=gui-libs/wf-config-0.7.0 ~amd64
+# required by x11-terms/kitty-0.19.3::gentoo
+# required by @selected
+# required by @world (argument)
+=x11-terms/kitty-terminfo-0.19.3 ~amd64
+# required by @selected
+# required by @world (argument)
+=games-action/multimc-0.6.11 ~amd64
+# required by @selected
+# required by @world (argument)
+=gui-apps/wf-recorder-0.2.1-r1 ~amd64
+# required by bpytop (argument)
+=sys-process/bpytop-1.0.61-r1 ~amd64
+# required by pfetch (argument)
+=app-misc/pfetch-0.6.0 ~amd64
+# required by icecat (argument)
+=www-client/icecat-78.8.0 ~amd64
+# required by gnome-extra/cinnamon-4.8.6::gentoo
+# required by cinnamon (argument)
+=gnome-extra/cinnamon-control-center-4.8.2 ~amd64
+# required by gnome-extra/cinnamon-control-center-4.8.2::gentoo
+# required by gnome-extra/cinnamon-4.8.6::gentoo
+# required by cinnamon (argument)
+=gnome-extra/cinnamon-menus-4.8.2 ~amd64
+# required by gnome-extra/cinnamon-4.8.6::gentoo
+# required by cinnamon (argument)
+=x11-libs/xapps-2.0.6 ~amd64
+# required by gnome-extra/cinnamon-control-center-4.8.2::gentoo[input_devices_wacom]
+# required by gnome-extra/cinnamon-4.8.6::gentoo
+# required by cinnamon (argument)
+=gnome-extra/cinnamon-settings-daemon-4.8.5 ~amd64
+# required by gnome-extra/nemo-4.8.4::gentoo[nls]
+# required by gnome-extra/cinnamon-4.8.6::gentoo
+# required by cinnamon (argument)
+=gnome-extra/cinnamon-translations-4.8.3 ~amd64
+# required by x11-wm/muffin-4.8.1::gentoo
+# required by gnome-extra/cinnamon-4.8.6::gentoo
+# required by cinnamon (argument)
+=gnome-extra/cinnamon-desktop-4.8.1 ~amd64
+# required by gnome-extra/cinnamon-4.8.6::gentoo
+# required by cinnamon (argument)
+=gnome-extra/cjs-4.8.2 ~amd64
+# required by gnome-extra/cinnamon-4.8.6::gentoo
+# required by cinnamon (argument)
+=gnome-extra/cinnamon-screensaver-4.8.1 ~amd64
+# required by gnome-extra/cinnamon-4.8.6::gentoo
+# required by cinnamon (argument)
+=gnome-extra/nemo-4.8.4 ~amd64
+# required by gnome-extra/cinnamon-4.8.6::gentoo
+# required by cinnamon (argument)
+=x11-wm/muffin-4.8.1 ~amd64
+# required by gnome-extra/cinnamon-4.8.6::gentoo
+# required by cinnamon (argument)
+=gnome-extra/cinnamon-session-4.8.0 ~amd64

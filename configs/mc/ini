@@ -89,7 +89,7 @@ filepos_max_saved_entries=1024
 
 [Layout]
 output_lines=0
-left_panel_size=52
+left_panel_size=53
 top_panel_size=14
 message_visible=false
 keybar_visible=true
@@ -116,6 +116,8 @@ clipboard_paste=
 base_color=
 xterm-kitty=
 color_terminals=
+
+linux=
 
 [Panels]
 simple_swap=false

@@ -1,3 +1,8 @@
+gnome-extra/cinnamon -gstreamer
+www-client/firefox -clang pgo
+www-client/icecat -clang pgo
+x11-libs/libwnck -startup-notification
+sys-fs/eudev -introspection
 app-emulation/wine-vanilla -sql -unwind -samba -lcms -realtime openal osmesa faudio
 www-client/w3m -imlib
 app-arch/p7zip -wxwidgets
@@ -10,7 +15,7 @@ sys-apps/portage gentoo-dev
 media-libs/openal abi_x86_32
 sys-fs/lvm2 -thin
 media-sound/pulseaudio abi_x86_32
-media-libs/libcanberra -gtk
+media-libs/libcanberra -gtk -sound
 net-misc/remmina rdp appindicator
 media-sound/deadbeef wavpack -supereq ffmpeg
 sys-boot/grub -themes mount
@@ -33,14 +38,14 @@ media-video/ffmpeg -vdpau twolame speex openh264 openal lzma codec2 amr vpx wavp
 media-video/mpv -cli -samba -luajit -luaa libmpv
 net-p2p/transmission gtk -qt5
 app-crypt/gcr gtk
-sys-devel/gcc graphite
+sys-devel/gcc
 net-wireless/wpa_supplicant -qt5 dbus
 x11-libs/libdrm video_cards_radeon
 dev-lang/rust system-llvm llvm_targets_AMDGPU system-bootstrap
 app-crypt/pinentry gnome-keyring 
 gnome-base/gvfs archive nfs samba mtp -cdda -udisks 
 sys-libs/libblockdev -lvm
-media-libs/mesa llvm video_cards_iris video_cards_radeonsi d3d9  vaapi
+media-libs/mesa llvm video_cards_iris video_cards_radeonsi d3d9 vaapi
 sys-libs/ncurses -gpm
 media-libs/phonon -vlc
 media-libs/libsdl2 gles2
@@ -574,3 +579,33 @@ net-misc/networkmanager -bluetooth -modemmanager -ppp
 # required by @selected
 # required by @world (argument)
 >=media-libs/mesa-20.3.4 osmesa
+# required by virtual/libudev-232-r3::gentoo[-systemd]
+# required by sys-apps/util-linux-2.35.2::gentoo[udev]
+# required by app-text/xmlto-0.0.28-r3::gentoo
+# required by x11-misc/shared-mime-info-2.0-r2::gentoo
+# required by gnome-base/dconf-0.36.0::gentoo
+# required by dev-libs/glib-2.66.7::gentoo[dbus]
+# required by dev-libs/libical-3.0.9::gentoo[glib]
+# required by net-wireless/bluez-5.55::gentoo[obex]
+# required by dev-lang/python-3.9.2::gentoo[bluetooth]
+# required by media-libs/mesa-20.3.4::gentoo
+# required by virtual/opengl-7.0-r2::gentoo
+# required by x11-libs/libva-2.10.0::gentoo[opengl]
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo
+>=sys-fs/eudev-3.2.10 abi_x86_32
+# required by app-emulation/wine-vanilla-6.0::gentoo[v4l]
+# required by virtual/wine-0-r7::wine
+# required by app-emulation/winetricks-20200412::wine
+# required by app-emulation/protontricks-1.4.3::gentoo
+# required by @selected
+# required by @world (argument)
+>=media-libs/libv4l-1.20.0 abi_x86_32
+# required by gnome-extra/cinnamon-4.8.6::gentoo
+# required by cinnamon (argument)
+>=x11-libs/xapps-2.0.6 introspection
+# required by media-libs/clutter-1.26.4::gentoo[egl]
+# required by app-accessibility/caribou-0.4.21-r2::gentoo
+# required by gnome-extra/cinnamon-screensaver-4.8.1::gentoo
+# required by gnome-extra/cinnamon-4.8.6::gentoo
+# required by cinnamon (argument)
+>=media-libs/cogl-1.22.8 gles2
