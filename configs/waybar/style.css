@@ -24,6 +24,7 @@ background: black
 #pulseaudio,
 #temperature,
 #clock,
+#bluetooth,
 #backlight,
 #battery {
     margin: 1px;
@@ -37,6 +38,11 @@ background: black
 }
 
 #network {
+    color: #ffffff;
+    background: #111111;
+}
+
+#bluetooth {
     color: #ffffff;
     background: #111111;
 }

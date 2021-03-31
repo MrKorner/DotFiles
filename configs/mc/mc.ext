@@ -582,7 +582,7 @@ type/^PostScript
 
 # PDF
 type/^PDF
-	Open=/usr/bin/zathura %f &
+	Open=/usr/bin/ungoogled-chromium-bin %f &
 	View=%view{ascii} /usr/libexec/mc/ext.d/doc.sh view pdf
 
 # html

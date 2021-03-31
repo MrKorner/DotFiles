@@ -1,4 +1,4 @@
-rm -rf ./configs/* &&
+#rm -rf ./configs/* &&
 cp -r ~/.config/waybar/ ./configs/ &&
 cp ~/.config/wayfire.ini ./configs/ &&
 rsync -av --progress /etc/portage/ ./configs/portage --exclude make.profile/ &&
