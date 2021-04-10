@@ -1,11 +1,11 @@
-gnome-extra/nm-applet appindicator
- media-gfx/gthumb -cdr -exif -lcms
+app-emulation/qemu -jpeg -oss -usb -vnc
+sys-fs/lvm2 -thin
+app-text/evince -tiff
+media-gfx/gthumb -cdr -exif -lcms
 net-print/cups-filters -pdf -tiff -postscript  -foomatic -jpeg -png
-x11-misc/redshift -gtk
 x11-libs/libwnck -startup-notification
 sys-fs/eudev -introspection
 app-emulation/wine-vanilla -sql -unwind -samba -lcms -realtime openal -osmesa -faudio -v4l
-sys-fs/lvm2 -thin
 www-client/w3m -imlib
 app-arch/p7zip -wxwidgets
 net-print/cups -usb -threads -acl -ssl
@@ -20,16 +20,12 @@ gui-libs/wlroots iccm x11-backend seatd
 gui-apps/waybar network popups tray wifi
 net-libs/glib-networking -libproxy
 dev-libs/glib dbus
-net-fs/samba client
 media-libs/clutter egl
 sys-block/parted device-mapper
 sys-fs/e2fsprogs fuse
 media-video/ffmpeg -vdpau twolame speex openh264 openal lzma codec2 amr vpx wavpack
 media-video/mpv -cli -samba -luajit -luaa libmpv
-net-p2p/transmission gtk -qt5
 net-wireless/wpa_supplicant -qt5 dbus
-x11-libs/libdrm video_cards_radeon
-dev-lang/rust system-llvm llvm_targets_AMDGPU system-bootstrap
 app-crypt/pinentry gnome-keyring 
 gnome-base/gvfs archive nfs mtp -cdda -udisks 
 sys-libs/libblockdev -lvm

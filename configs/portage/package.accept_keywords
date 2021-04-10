@@ -1,3 +1,5 @@
+dev-java/openjdk-jre-bin ~amd64
+dev-java/openjdk-bin ~amd64
 www-client/chromium ~amd64
 sys-apps/intel-power-control **
 gui-wm/wayfire ~amd64
@@ -57,3 +59,11 @@ net-misc/freetube-bin ~amd64
 =app-misc/pfetch-0.6.0 ~amd64
 # required by ungoogled-chromium-bin (argument)
 =www-client/ungoogled-chromium-bin-85.0.4183.102 ~amd64
+# required by multimc (argument)
+=games-action/multimc-0.6.12 ~amd64
+# required by lynis (argument)
+=app-forensics/lynis-3.0.3-r2 ~amd64
+# required by micro (argument)
+=app-editors/micro-2.0.8 ~amd64
+# required by jmtpfs (argument)
+=sys-fs/jmtpfs-0.5-r1 ~amd64

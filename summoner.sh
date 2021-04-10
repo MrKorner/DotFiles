@@ -10,4 +10,5 @@ cp -r ~/.config/wofi/ ./configs/ &&
 cp /etc/nanorc ./configs/ &&
 cp /etc/samba/smb.conf ./configs/ &&
 cp -r ~/.config/mc ./configs/ &&
+cp ~/.tmux.conf ./configs/ &&
 echo ":)"

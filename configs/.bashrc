@@ -17,3 +17,33 @@ fi
 export PS1="\[\033[38;5;196m\]\\$\[$(tput sgr0)\][\[$(tput sgr0)\]\[\033[38;5;82m\]\A\[$(tput sgr0)\]]\[$(tput sgr0)\]\[\033[38;5;50m\]\u\[$(tput sgr0)\]@\[$(tput sgr0)\]\[\033[38;5;199m\]\H\[$(tput sgr0)\]\n\[$(tput sgr0)\]\[\033[38;5;226m\]>\w:\[$(tput sgr0)\]"
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/bin:/home/korner/.local/bin
 export $(dbus-launch)
+
+if [ -n "$PS1" ] &&
+    [ -n "$DISPLAY" ] &&
+    [[ ! "$TERM" =~ screen ]] &&
+    [[ ! "$TERM" =~ tmux ]] &&
+    [ -z "$TMUX" ] &&
+    ! [ -e ~/storage/shared ] &&
+    command -v tmux 2>&1 1>/dev/null
+then
+    export TERM="screen-256color"
+    if [[ "$SHELL" == *"bash" ]]; then
+        exec tmux
+    else
+        exec tmux -c bash
+    fi
+fi
+
+tmkill() {
+    LIST="$(tmux ls)"
+    TSESSIONS=""
+    while read -r line; do
+        if ! echo "$line" | grep 'attached'; then
+            tmux kill-session -t "$(echo $line | grep -oP '^\d\d?')"
+        fi
+    done <<<"$LIST"
+}
+
+sl() {
+    sll
+}

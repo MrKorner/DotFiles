@@ -22,7 +22,7 @@
    "format": "{icon} ({status})",
    "interval": 5,
    "format-icons": {
-      "enabled": "✅",
+      "enabled": "🔷",
       "disabled": "❌"
    },
    "format-disconnected": "Disconnected",
@@ -32,9 +32,9 @@
     "tooltip-format": "{essid} ({ipaddr})",
     "tooltip-format-ethernet": "{ipaddr}",
     "tooltip-format-diconnected": "Disconnected",
-    "format-wifi": "{essid} ({signalStrength}%)",
-    "format-ethernet": "eth",
-    "format-disconnected": "Disconnected",
+    "format-wifi": "📡 {essid} ({signalStrength}%)",
+    "format-ethernet": "🐍ethernet",
+    "format-disconnected": "☠ Disconnected",
   },
   "pulseaudio": {
     "tooltip": false,
@@ -55,11 +55,11 @@
       "warning": 30,
       "critical": 15,
     },
-    "format": "BATT ({capacity}%)"
+    "format": "🔋 ({capacity}%)"
   },
     "backlight": {
         "format": "{icon} {percent}%",
-        "format-icons": {"default": ["☀"],},
+        "format-icons": {"default": ["🔅", "🔆"]},
         "on-scroll-up": "light -A 5",
         "on-scroll-down": "light -U 5"
   },

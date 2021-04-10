@@ -822,7 +822,7 @@ shell/i/\.wim
 # includes should be at end of bindings
 
 include/editor
-	Open=%var{EDITOR:nano} %f
+	Open=%var{EDITOR:micro} %f
 
 include/image
 	Open=/usr/bin/gthumb %f &
