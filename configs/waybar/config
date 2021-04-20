@@ -4,7 +4,7 @@
   "position": "bottom",
   "modules-left": ["wlr/taskbar"],
   "modules-center": [],
-  "modules-right": ["tray", "pulseaudio", "bluetooth", "network", "temperature", "backlight", "battery", "clock"],
+  "modules-right": ["tray", "pulseaudio" , "network", "temperature", "backlight", "battery", "clock"],
   "tray": {
     "icon-size": 20,
     "spacing": 5,
@@ -18,21 +18,12 @@
     "on-click-right": "minimize",
     "on-click-middle": "close",
   },
-  "bluetooth": {
-   "format": "{icon} ({status})",
-   "interval": 5,
-   "format-icons": {
-      "enabled": "🔷",
-      "disabled": "❌"
-   },
-   "format-disconnected": "Disconnected",
-  },
   "network": {
     "tooltip": true,
     "tooltip-format": "{essid} ({ipaddr})",
     "tooltip-format-ethernet": "{ipaddr}",
     "tooltip-format-diconnected": "Disconnected",
-    "format-wifi": "📡 {essid} ({signalStrength}%)",
+    "format-wifi": "📡 {essid}",
     "format-ethernet": "🐍ethernet",
     "format-disconnected": "☠ Disconnected",
   },

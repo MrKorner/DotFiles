@@ -582,7 +582,7 @@ type/^PostScript
 
 # PDF
 type/^PDF
-	Open=/usr/bin/ungoogled-chromium-bin %f &
+	Open=flatpak run org.mozilla.firefox %f &
 	View=%view{ascii} /usr/libexec/mc/ext.d/doc.sh view pdf
 
 # html
@@ -634,7 +634,7 @@ regex/i/\.(pp[ts]|pptx)$
 
 # Use OpenOffice.org/LibreOffice to open any MS Office documents
 type/^Microsoft\ Office\ Document
-	Open=/usr/libexec/mc/ext.d/doc.sh open ooffice %f &
+	Open=flatpak run org.libreoffice.LibreOffice %f &
 type/^Microsoft\ OOXML
 	Open=/usr/libexec/mc/ext.d/doc.sh open ooffice %f &
 
@@ -822,14 +822,14 @@ shell/i/\.wim
 # includes should be at end of bindings
 
 include/editor
-	Open=%var{EDITOR:micro} %f
+	Open=/usr/bin/micro %f
 
 include/image
 	Open=/usr/bin/gthumb %f &
 	View=%view{ascii} /usr/libexec/mc/ext.d/image.sh view ALL_FORMATS
 
 include/video
-	Open=/usr/bin/celluloid %f
+	Open=/usr/bin/celluloid %f &
 	View=%view{ascii} /usr/libexec/mc/ext.d/video.sh view ALL_FORMATS
 
 
