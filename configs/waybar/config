@@ -2,9 +2,9 @@
   "layer": "top",
   "height": "40px",
   "position": "bottom",
-  "modules-left": ["wlr/taskbar"],
-  "modules-center": [],
-  "modules-right": ["tray", "pulseaudio" , "network", "temperature", "backlight", "battery", "clock"],
+  "modules-left": ["sway/mode", "sway/workspaces"],
+  "modules-center": ["sway/window"],
+  "modules-right": ["tray", "sway/language", "pulseaudio" , "network", "temperature", "backlight", "battery", "clock",],
   "tray": {
     "icon-size": 20,
     "spacing": 5,
@@ -52,12 +52,33 @@
         "format": "{icon} {percent}%",
         "format-icons": {"default": ["🔅", "🔆"]},
         "on-scroll-up": "light -A 5",
-        "on-scroll-down": "light -U 5"
+        "on-scroll-down": "light -U 5",
   },
     "clock": {
         "interval": 1,
         "format": "{:%A %d %B %H:%M:%S}",
         "tooltip": true,
         "tooltip-format": "<big>{:%B %Y}</big>\n<tt>{calendar}</tt>"
+  },
+  "sway/workspaces": {
+      "disable-scroll": false,
+      "all-outputs": true,
+      "format": "{name}",
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+  },
+  "sway/mode": {
+        "format": "{}",
+        "max-length": 50
+  },  
+  "sway/window": {
+      "format": "{}",
+      "max-length": 100,
+  },
+  "sway/language": {
+      "format": "{}",
+      "max-length": 50
   }
 }

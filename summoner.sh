@@ -1,6 +1,6 @@
 #rm -rf ./configs/* &&
 cp -r ~/.config/waybar/ ./configs/ &&
-cp ~/.config/wayfire.ini ./configs/ &&
+#cp ~/.config/wayfire.ini ./configs/ &&
 rsync -av --progress /etc/portage/ ./configs/portage --exclude make.profile/ &&
 cp /var/lib/portage/world ./configs/portage &&
 cp -r ~/.config/kitty ./configs/ &&
@@ -11,4 +11,5 @@ cp /etc/nanorc ./configs/ &&
 cp /etc/samba/smb.conf ./configs/ &&
 cp -r ~/.config/mc ./configs/ &&
 cp ~/.tmux.conf ./configs/ &&
+cp -r ~/.config/sway/ ./configs/ &&
 echo ":)"

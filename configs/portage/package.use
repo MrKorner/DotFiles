@@ -1,4 +1,6 @@
+gui-wm/sway seatd tray
 kde-apps/ark zip
+mail-client/thunderbird -clang
 kde-plasma/powerdevil brightness-control
 kde-apps/okular -plucker -postscript
 media-plugins/audacious-plugins ffmpeg lame wavpack
@@ -9,7 +11,7 @@ sys-fs/lvm2 -thin
 app-text/evince -tiff
 media-gfx/gthumb -cdr -exif -lcms
 net-print/cups-filters -pdf -tiff -postscript  -foomatic -jpeg -png
-x11-libs/libwnck -startup-notification
+x11-libs/libwnck -startup-notificationequ
 sys-fs/eudev -introspection
 www-client/w3m -imlib
 app-arch/p7zip -wxwidgets
@@ -47,31 +49,3 @@ net-misc/networkmanager -bluetooth -modemmanager -ppp
 # required by sys-fs/udisks-2.9.1::gentoo
 # required by @selected
 # required by @world (argument)
->=app-text/xmlto-0.0.28-r3 text
-# required by dev-qt/qtwayland-5.15.2::gentoo
->=dev-qt/qtgui-5.15.2-r1 egl
-# required by dev-qt/qtcore-5.15.2-r1::gentoo
-# required by dev-qt/qtwidgets-5.15.2::gentoo
-# required by dev-qt/qtdeclarative-5.15.2::gentoo[widgets]
-# required by dev-qt/qtwayland-5.15.2::gentoo
-# required by dev-qt/qtgui-5.15.2-r1::gentoo[q
-# required by kde-frameworks/kfilemetadata-5.80.0::gentoo[pdf]
-# required by kde-frameworks/baloo-5.80.0-r1::gentoo
-# required by kde-plasma/plasma-desktop-5.20.5-r1::gentoo[semantic-desktop]
-# required by kde-plasma/plasma-meta-5.20.5::gentoo
-# required by plasma-meta (argument)
->=app-text/poppler-21.02.0 qt5
-# required by kde-plasma/xdg-desktop-portal-kde-5.20.5::gentoo
-# required by kde-plasma/plasma-meta-5.20.5::gentoo[desktop-portal]
-# required by plasma-meta (argument)
->=dev-qt/qtprintsupport-5.15.2 cups
-# required by kde-plasma/plasma-workspace-5.20.5-r4::gentoo
-# required by kde-plasma/kdeplasma-addons-5.20.5::gentoo
-# required by kde-plasma/plasma-meta-5.20.5::gentoo
-# required by plasma-meta (argument)
->=kde-frameworks/prison-5.80.0 qml
-# required by kde-plasma/kwin-5.20.5-r1::gentoo
-# required by kde-plasma/plasma-desktop-5.20.5-r1::gentoo
-# required by kde-plasma/plasma-meta-5.20.5::gentoo
-# required by plasma-meta (argument)
->=kde-frameworks/kitemmodels-5.80.0 qml
