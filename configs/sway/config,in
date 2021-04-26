@@ -1,14 +1,23 @@
-default_border none 0
-default_floating_border none 0
-hide_edge_borders both
+# Default config for sway
+#
+# Copy this to ~/.config/sway/config and edit it to your liking.
+#
+# Read `man 5 sway` for a complete reference.
 
+### Variables
+#
+# Logo key. Use Mod1 for Alt.
 set $mod Mod4
 # Home row direction keys, like vim
 set $left h
 set $down j
 set $up k
 set $right l
+# Your preferred terminal emulator
 set $term kitty
+# Your preferred application launcher
+# Note: pass the final command to swaymsg so that the resulting window can be opened
+# on the original workspace that the command was run on.
 set $menu wofi --show drun | xargs swaymsg exec --
 
 
@@ -19,7 +28,18 @@ exec swayidle -w \
           before-sleep 'swaylock -f -c 000000'
           
 ### Input configuration
-exec swaymsg input *Synaptic* events disabled
+#
+# Example configuration:
+#
+#   input "2:14:SynPS/2_Synaptics_TouchPad" {
+#       dwt enabled
+#       tap enabled
+#       natural_scroll enabled
+#       middle_emulation enabled
+#   }
+#
+# You can get the names of your inputs by running: swaymsg -t get_inputs
+# Read `man 5 sway-input` for more information about this section.
 
 ### Key bindings
 #
@@ -45,7 +65,7 @@ exec swaymsg input *Synaptic* events disabled
     bindsym $mod+Shift+c reload
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+z exec killall sway
+    bindsym $mod+Shift+esc exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
 #
 # Moving around:
 #
@@ -91,13 +111,14 @@ exec swaymsg input *Synaptic* events disabled
     # You can "split" the current object of your focus with
     # $mod+b or $mod+v, for horizontal and vertical splits
     # respectively.
-    bindsym $mod+r splith
-    bindsym $mod+e splitv
+    bindsym $mod+b splith
+    bindsym $mod+v splitv
 
     # Switch the current container between different layout styles
     bindsym $mod+b layout stacking
-    bindsym $mod+n layout tiled
-    bindsym $mod+m layout toggle split 
+    bindsym $mod+n layout tabbed
+    bindsym $mod+m layout toggle split
+
     # Make the current focus fullscreen
     bindsym $mod+f fullscreen
 
@@ -129,10 +150,10 @@ mode "resize" {
     # right will grow the containers width
     # up will shrink the containers height
     # down will grow the containers height
-    #bindsym $left resize shrink width 10px
-    #bindsym $down resize grow height 10px
-    #bindsym $up resize shrink height 10px
-    #bindsym $right resize grow width 10px
+    bindsym $left resize shrink width 10px
+    bindsym $down resize grow height 10px
+    bindsym $up resize shrink height 10px
+    bindsym $right resize grow width 10px
 
     # Ditto, with arrow keys
     bindsym Left resize shrink width 10px
@@ -144,31 +165,15 @@ mode "resize" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $mod+shift+r mode "resize"
+bindsym $mod+r mode "resize"
 
+#
 # Status Bar:
+#
+# Read `man 5 sway-bar` for more information about this section.
 bar {
   swaybar_command waybar
-}
-
-# Function binds 
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
-bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
-bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
-bindsym XF86MonBrightnessDown exec light -U 10
-bindsym XF86MonBrightnessUp exec light -A 10
-input * xkb_numlock enable
-bindsym print exec slurp | grim -g - $(date '+%F_%T').png
-# Autostart
-exec /usr/libexec/polkit-gnome-authentication-agent-1
-exec /home/korner/volumeguard.sh
-exec mako
-exec swaybg -i ~/bg.png
-exec dbus-update-activation-environment DISPLAY WAYLAND_DISPLAY XDG_RUNTIME_DIR DBUS_SESSION_BUS_ADRESS
-exec export XDG_SESSION_TYPE=wayland; export GDK_BACKEND=wayland; export QT_QPA_PLATFORM=wayland; export MOZ_ENABLE_WAYLAND=1;
-exec /usr/bin/gnome-keyring-daemon; /usr/bin/gnome-keyring-daemon  
-exec sh ~/volumeguard.sh
-
+  workspace_buttons yes
+)
 
 include @sysconfdir@/sway/config.d/*
