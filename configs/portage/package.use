@@ -25,8 +25,8 @@ dev-libs/glib dbus
 media-libs/clutter egl
 sys-block/parted device-mapper
 sys-fs/e2fsprogs fuse
-media-video/ffmpeg -vdpau twolame speex openh264 openal lzma codec2 amr vpx wavpack
-media-video/mpv -cli -samba -luajit -luaa libmpv
+media-video/ffmpeg -vdpau twolame speex openh264 -openal lzma codec2 amr vpx wavpack
+media-video/mpv -cli -samba -luajit -luaa libmpv -openal 
 net-wireless/wpa_supplicant -qt5 dbus
 app-crypt/pinentry gnome-keyring 
 gnome-base/gvfs archive nfs mtp -cdda -udisks 
