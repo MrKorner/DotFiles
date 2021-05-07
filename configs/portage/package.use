@@ -1,51 +1,202 @@
-gui-wm/sway seatd tray
-kde-apps/ark zip
-mail-client/thunderbird -clang
-kde-plasma/powerdevil brightness-control
-kde-apps/okular -plucker -postscript
-media-plugins/audacious-plugins ffmpeg lame wavpack
-dev-qt/qtprintsupport -cups
-kde-plasma/plasma-meta -browser-integration -crypt -gtk -smart -wallpapers
-media-video/mpv vaapi
+app-text/mupdf -ssl
+gui-wm/sway seatd -swaynag -swayidle
+net-wireless/iwd standalone
 sys-fs/lvm2 -thin
-app-text/evince -tiff
+app-admin/doas persistent
 media-gfx/gthumb -cdr -exif -lcms
-net-print/cups-filters -pdf -tiff -postscript  -foomatic -jpeg -png
-x11-libs/libwnck -startup-notificationequ
 sys-fs/eudev -introspection
 www-client/w3m -imlib
-app-arch/p7zip -wxwidgets
+media-sound/pulseaudio -tcpd
 media-libs/libcanberra -gtk -sound
 media-sound/deadbeef wavpack -supereq ffmpeg
-net-wireless/bluez user-session
-gui-libs/wlroots iccm x11-backend seatd
-gui-apps/waybar network popups tray wifi
-net-libs/glib-networking -libproxy
-dev-libs/glib dbus
-media-libs/clutter egl
-sys-block/parted device-mapper
-sys-fs/e2fsprogs fuse
-media-video/ffmpeg -vdpau twolame speex openh264 -openal lzma codec2 amr vpx wavpack
-media-video/mpv -cli -samba -luajit -luaa libmpv -openal 
+gui-libs/wlroots x11-backend seatd
+gui-apps/waybar -network popups -wifi
+media-video/ffmpeg x265 wavpack
+media-video/mpv -cli -samba -luajit -lua libmpv -openal 
 net-wireless/wpa_supplicant -qt5 dbus
+net-libs/glib-networking -libproxy
 app-crypt/pinentry gnome-keyring 
-gnome-base/gvfs archive nfs mtp -cdda -udisks 
 sys-libs/libblockdev -lvm
-media-libs/mesa llvm video_cards_iris video_cards_radeonsi d3d9 vaapi
+media-libs/mesa llvm video_cards_iris video_cards_radeonsi vaapi
 sys-libs/ncurses -gpm
-media-libs/phonon -vlc
-x11-libs/libdrm video_cards_radeon
 media-libs/libsdl2 gles2
-media-gfx/fontforge -gtk 
-net-misc/networkmanager -bluetooth -modemmanager -ppp
->=media-libs/libvpx-1.9.0 postproc
->=media-video/ffmpeg-4.3.1 vdpau vaapi x265
+x11-libs/libdrm video_cards_radeon 
 >=dev-util/ostree-2020.6 curl
 >=sys-block/parted-3.3-r1 device-mapper
 >=dev-libs/libdbusmenu-16.04.0-r1 gtk3 -gtk
-# required by net-wireless/bluez-5.55::gentoo[systemd]
-# required by dev-lang/python-3.8.7::gentoo[bluetooth]
-# required by sys-libs/libblockdev-2.24::gentoo[python_single_target_python3_8]
-# required by sys-fs/udisks-2.9.1::gentoo
-# required by @selected
-# required by @world (argument)
+# required by x11-libs/libXdamage-1.1.5::gentoo
+# required by media-libs/mesa-20.3.5::gentoo[X]
+# required by games-util/steam-games-meta-0-r20210323::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=x11-libs/libX11-1.7.0 abi_x86_32
+# required by x11-libs/libxcb-1.14::gentoo
+# required by media-libs/mesa-20.3.5::gentoo[X]
+# required by games-util/steam-games-meta-0-r20210323::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=x11-libs/libXau-1.0.9-r1 abi_x86_32
+# required by media-libs/mesa-20.3.5::gentoo[X]
+# required by games-util/steam-games-meta-0-r20210323::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=x11-libs/libxcb-1.14 abi_x86_32
+# required by x11-libs/libxcb-1.14::gentoo
+# required by media-libs/mesa-20.3.5::gentoo[X]
+# required by games-util/steam-games-meta-0-r20210323::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=x11-libs/libXdmcp-1.1.3 abi_x86_32
+# required by x11-libs/libxcb-1.14::gentoo
+# required by media-libs/mesa-20.3.5::gentoo[X]
+# required by games-util/steam-games-meta-0-r20210323::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=x11-base/xcb-proto-1.14.1 abi_x86_32
+# required by x11-libs/libva-2.10.0::gentoo[opengl]
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo
+>=virtual/opengl-7.0-r2 abi_x86_32
+# required by virtual/opengl-7.0-r2::gentoo
+# required by games-util/steam-client-meta-0-r20210322::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay
+# required by steam-meta (argument)
+>=media-libs/mesa-20.3.5 abi_x86_32
+# required by dev-libs/wayland-1.19.0::gentoo
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo[wayland]
+# required by x11-libs/libva-2.10.0::gentoo[video_cards_intel,-video_cards_i965]
+# required by media-libs/mesa-20.3.5::gentoo[vaapi,gallium]
+# required by games-util/steam-games-meta-0-r20210323::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=dev-libs/expat-2.2.10 abi_x86_32
+# required by media-libs/mesa-20.3.5::gentoo
+# required by games-util/steam-games-meta-0-r20210323::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=media-libs/libglvnd-1.3.2-r2 abi_x86_32
+# required by sys-devel/llvm-11.1.0::gentoo
+# required by media-libs/mesa-20.3.5::gentoo[-video_cards_radeon,-opencl,-video_cards_r600,gallium,llvm,video_cards_radeonsi]
+# required by games-util/steam-games-meta-0-r20210323::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=sys-libs/zlib-1.2.11-r3 abi_x86_32
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo
+>=x11-libs/libva-2.10.0 abi_x86_32
+# required by media-libs/mesa-20.3.5::gentoo[wayland]
+# required by games-util/steam-games-meta-0-r20210323::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=dev-libs/wayland-1.19.0 abi_x86_32
+# required by media-libs/mesa-20.3.5::gentoo
+# required by games-util/steam-games-meta-0-r20210323::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=x11-libs/libdrm-2.4.104 abi_x86_32
+# required by media-libs/mesa-20.3.5::gentoo[X]
+# required by games-util/steam-games-meta-0-r20210323::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=x11-libs/libxshmfence-1.3-r2 abi_x86_32
+# required by media-libs/mesa-20.3.5::gentoo[X]
+# required by games-util/steam-games-meta-0-r20210323::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=x11-libs/libXdamage-1.1.5 abi_x86_32
+# required by x11-libs/libva-2.10.0::gentoo[X]
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo
+>=x11-libs/libXext-1.3.4 abi_x86_32
+# required by media-libs/mesa-20.3.5::gentoo[X]
+# required by games-util/steam-games-meta-0-r20210323::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=x11-libs/libXxf86vm-1.1.4-r2 abi_x86_32
+# required by x11-libs/libva-2.10.0::gentoo[X]
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo
+>=x11-libs/libXfixes-5.0.3-r3 abi_x86_32
+# required by media-libs/mesa-20.3.5::gentoo[zstd]
+# required by games-util/steam-games-meta-0-r20210323::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=app-arch/zstd-1.4.9 abi_x86_32
+# required by media-libs/mesa-20.3.5::gentoo[-video_cards_radeon,-opencl,-video_cards_r600,gallium,llvm,video_cards_radeonsi]
+# required by games-util/steam-games-meta-0-r20210323::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=sys-devel/llvm-11.1.0 abi_x86_32
+# required by media-libs/mesa-20.3.5::gentoo[X]
+# required by games-util/steam-games-meta-0-r20210323::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=x11-libs/libXrandr-1.5.2 abi_x86_32
+# required by dev-libs/wayland-1.19.0::gentoo
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo[wayland]
+# required by x11-libs/libva-2.10.0::gentoo[video_cards_intel,-video_cards_i965]
+# required by media-libs/mesa-20.3.5::gentoo[vaapi,gallium]
+# required by games-util/steam-games-meta-0-r20210323::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=dev-util/wayland-scanner-1.19.0 abi_x86_32
+# required by x11-libs/libXrandr-1.5.2::gentoo
+# required by media-libs/mesa-20.3.5::gentoo[X]
+# required by games-util/steam-games-meta-0-r20210323::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=x11-libs/libXrender-0.9.10-r2 abi_x86_32
+# required by sys-devel/llvm-11.1.0::gentoo[libffi]
+# required by media-libs/mesa-20.3.5::gentoo[-video_cards_radeon,-opencl,-video_cards_r600,gallium,llvm,video_cards_radeonsi]
+# required by games-util/steam-games-meta-0-r20210323::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=dev-libs/libffi-3.3-r2 abi_x86_32
+# required by sys-devel/llvm-11.1.0::gentoo[ncurses]
+# required by media-libs/mesa-20.3.5::gentoo[-video_cards_radeon,-opencl,-video_cards_r600,gallium,llvm,video_cards_radeonsi]
+# required by games-util/steam-games-meta-0-r20210323::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=sys-libs/ncurses-6.2-r1 abi_x86_32
+# required by sys-devel/llvm-11.1.0::gentoo[xml]
+# required by media-libs/mesa-20.3.5::gentoo[-video_cards_radeon,-opencl,-video_cards_r600,gallium,llvm,video_cards_radeonsi]
+# required by games-util/steam-games-meta-0-r20210323::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=dev-libs/libxml2-2.9.10-r5 abi_x86_32
+# required by dev-libs/libxml2-2.9.10-r5::gentoo[icu]
+# required by x11-base/xcb-proto-1.14.1::gentoo
+# required by x11-libs/libxcb-1.14::gentoo
+# required by media-libs/mesa-20.3.5::gentoo[X]
+# required by games-util/steam-games-meta-0-r20210323::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=dev-libs/icu-68.2 abi_x86_32
+# required by x11-libs/libdrm-2.4.104::gentoo[video_cards_intel]
+# required by x11-libs/libva-intel-driver-2.4.1::gentoo
+# required by x11-libs/libva-2.10.0::gentoo[video_cards_intel,-video_cards_i965]
+# required by media-libs/mesa-20.3.5::gentoo[vaapi,gallium]
+# required by games-util/steam-games-meta-0-r20210323::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=x11-libs/libpciaccess-0.16 abi_x86_32
+# required by x11-libs/libva-2.10.0::gentoo[video_cards_intel,-video_cards_i965]
+# required by media-libs/mesa-20.3.5::gentoo[vaapi,gallium]
+# required by games-util/steam-games-meta-0-r20210323::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=x11-libs/libva-intel-driver-2.4.1 abi_x86_32
+# required by media-libs/mesa-20.3.5::gentoo[-video_cards_radeon,-opencl,-video_cards_r600,gallium,llvm,video_cards_radeonsi]
+# required by games-util/steam-games-meta-0-r20210323::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=virtual/libelf-3 abi_x86_32
+# required by virtual/libelf-3::gentoo
+# required by media-libs/mesa-20.3.5::gentoo[-video_cards_radeon,-opencl,-video_cards_r600,gallium,llvm,video_cards_radeonsi]
+# required by games-util/steam-games-meta-0-r20210323::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=dev-libs/elfutils-0.183 abi_x86_32
+# required by dev-libs/elfutils-0.183::gentoo[bzip2]
+# required by virtual/libelf-3::gentoo
+# required by media-libs/mesa-20.3.5::gentoo[-video_cards_radeon,-opencl,-video_cards_r600,gallium,llvm,video_cards_radeonsi]
+# required by games-util/steam-games-meta-0-r20210323::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=app-arch/bzip2-1.0.8-r1 abi_x86_32

@@ -17,18 +17,13 @@ background: black
     color: black;
     background: black;
 }
-
-#tray,
-#taskbar,
-#network,
 #pulseaudio,
+#custom-alsa,
 #temperature,
 #clock,
 #window,
 #workspaces,
-#mode,
 #language,
-#bluetooth,
 #backlight,
 #battery {
     margin: 1px;
@@ -39,16 +34,6 @@ background: black
     color: #ffffff;
     border: 1px solid red;
     border-radius: 5px;
-}
-
-#network {
-    color: #ffffff;
-    background: #111111;
-}
-
-#bluetooth {
-    color: #ffffff;
-    background: #111111;
 }
 
 #backlight {

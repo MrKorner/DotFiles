@@ -4,9 +4,9 @@ hide_edge_borders both
 
 set $mod Mod4
 set $menu wofi --show drun | xargs swaymsg exec --
-          
+set $term kitty          
 ### Input configuration
-exec swaymsg input *Synaptic* events disabled
+exec swaymsg input 1739:0:Synaptics_TM3383-032 events disabled
 
     bindsym $mod+Return exec $term
     bindsym $mod+q kill
@@ -36,10 +36,6 @@ exec swaymsg input *Synaptic* events disabled
     bindsym $mod+r splith
     bindsym $mod+e splitv
 
-    # Switch the current container between different layout styles
-    bindsym $mod+b layout stacking
-    bindsym $mod+n layout tiled
-    bindsym $mod+m layout toggle split 
     # Make the current focus fullscreen
     bindsym $mod+f fullscreen
 
@@ -86,6 +82,5 @@ exec dbus-update-activation-environment DISPLAY WAYLAND_DISPLAY XDG_RUNTIME_DIR 
 exec export XDG_SESSION_TYPE=wayland; export GDK_BACKEND=wayland; export QT_QPA_PLATFORM=wayland; export MOZ_ENABLE_WAYLAND=1;
 exec /usr/bin/gnome-keyring-daemon; /usr/bin/gnome-keyring-daemon  
 exec sh ~/volumeguard.sh
-
 
 include @sysconfdir@/sway/config.d/*
