@@ -1,5 +1,3 @@
-www-client/firefox-bin
-media-sound/pavucontrol
 =dev-java/openjdk-bin-8.272_p10
 app-admin/doas
 app-admin/sysklogd
@@ -17,15 +15,14 @@ app-portage/repoman
 app-shells/bash-completion
 app-shells/gentoo-bashcomp
 app-text/mupdf
-app-text/tree
 app-text/wgetpaste
 dev-lang/rust-bin
 dev-libs/light
 dev-python/mako
 dev-util/ccache
-dev-util/strace
 dev-vcs/git
 games-action/multimc
+games-util/steam-meta
 gnome-base/dconf-editor
 gui-apps/grim
 gui-apps/slurp
@@ -36,8 +33,8 @@ media-fonts/noto
 media-fonts/noto-cjk
 media-fonts/noto-emoji
 media-gfx/gthumb
-media-sound/alsa-utils
 media-sound/deadbeef
+media-sound/pavucontrol
 media-video/celluloid
 net-misc/youtube-dl
 net-p2p/rtorrent
@@ -54,10 +51,11 @@ sys-boot/efibootmgr
 sys-boot/refind
 sys-fs/cryptsetup
 sys-fs/dosfstools
+sys-fs/jmtpfs
 sys-kernel/gentoo-sources
 sys-kernel/linux-firmware
 sys-power/cpupower
 sys-power/powertop
 sys-process/htop
-sys-process/time
+www-client/firefox-bin
 x11-terms/alacritty

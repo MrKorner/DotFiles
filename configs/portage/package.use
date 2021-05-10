@@ -22,7 +22,6 @@ sys-libs/ncurses -gpm
 media-libs/libsdl2 gles2
 x11-libs/libdrm video_cards_radeon 
 >=dev-util/ostree-2020.6 curl
->=sys-block/parted-3.3-r1 device-mapper
 >=dev-libs/libdbusmenu-16.04.0-r1 gtk3 -gtk
 # required by x11-libs/libXdamage-1.1.5::gentoo
 # required by media-libs/mesa-20.3.5::gentoo[X]
@@ -199,4 +198,4 @@ x11-libs/libdrm video_cards_radeon
 # required by games-util/steam-games-meta-0-r20210323::steam-overlay
 # required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
 # required by steam-meta (argument)
->=app-arch/bzip2-1.0.8-r1 abi_x86_32
+app-arch/bzip2 abi_x86_32
