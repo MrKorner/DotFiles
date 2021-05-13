@@ -4,7 +4,7 @@
   "position": "bottom",
   "modules-left": ["sway/workspaces"],
   "modules-center": ["sway/window"],
-  "modules-right": ["sway/language", "pulseaudio", "temperature", "backlight", "battery", "clock",],
+  "modules-right": ["sway/language", "custom/alsa", "temperature", "backlight", "battery", "clock",],
   "wlr/taskbar": {
     "format": "{icon} {title:.32}",
     "icon-size": 20,

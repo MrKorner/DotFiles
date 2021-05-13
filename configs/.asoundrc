@@ -1,0 +1,10 @@
+defaults.pcm.!card PCH
+defaults.pcm.!device 0
+defaults.ctl.!card PCH
+defaults.pcm.dmix.rate 96000
+defaults.ctl.dmix.rate 96000
+pcm.dsp {
+    type plug
+    slave.pcm "dmix"
+}
+

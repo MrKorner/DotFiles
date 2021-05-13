@@ -70,9 +70,9 @@ bar {
 }
 
 # Function binds 
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
-bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioRaiseVolume "amixer -c PCH sset Master 5%+; pkill -x -RTMIN+11 waybar"
+bindsym XF86AudioLowerVolume "amixer -c PCH sset Master 5%-; pkill -x -RTMIN+11 waybar"
+bindsym XF86AudioMute "exec amixer -c PCH sset Master -1%; pkill -x -RTMIN+11 waybar"
 bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 bindsym XF86MonBrightnessDown exec light -U 10
 bindsym XF86MonBrightnessUp exec light -A 10
@@ -83,10 +83,12 @@ bindsym print exec slurp | grim -g - $(date '+%F_%T').png
 # Autostart
 exec /usr/libexec/polkit-gnome-authentication-agent-1
 exec mako
-exec ~/volumeguard.sh
+#exec ~/volumeguard.sh
 exec swaybg -i ~/bg.png
 exec dbus-update-activation-environment DISPLAY WAYLAND_DISPLAY XDG_RUNTIME_DIR DBUS_SESSION_BUS_ADRESS
 exec export XDG_SESSION_TYPE=wayland; export GDK_BACKEND=wayland; export QT_QPA_PLATFORM=wayland; export MOZ_ENABLE_WAYLAND=1;
 exec /usr/bin/gnome-keyring-daemon; /usr/bin/gnome-keyring-daemon  
+#exec --no-startup-id pipewire
 
 include @sysconfdir@/sway/config.d/*
+

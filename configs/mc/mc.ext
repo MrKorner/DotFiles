@@ -822,10 +822,10 @@ shell/i/\.wim
 # includes should be at end of bindings
 
 include/editor
-	Open=/usr/bin/micro %f
+	Open=/usr/bin/nano %f &
 
 include/image
-	Open=/usr/bin/gthumb %f &
+	Open=/usr/bin/imv %f &
 	View=%view{ascii} /usr/libexec/mc/ext.d/image.sh view ALL_FORMATS
 
 include/video
