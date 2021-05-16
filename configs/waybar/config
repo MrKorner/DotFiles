@@ -59,6 +59,7 @@
   },
   "sway/workspaces": {
       "disable-scroll": false,
+      "persistent_workspaces": true,
       "all-outputs": true,
       "format": "{name}",
         "1": "1",

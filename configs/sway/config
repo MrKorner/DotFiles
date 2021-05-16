@@ -1,6 +1,5 @@
-default_border none 0
-default_floating_border none 0
-hide_edge_borders both
+default_border none
+default_floating_border none
 
 set $mod Mod4
 set $menu wofi --show drun | xargs swaymsg exec --
@@ -70,9 +69,9 @@ bar {
 }
 
 # Function binds 
-bindsym XF86AudioRaiseVolume "amixer -c PCH sset Master 5%+; pkill -x -RTMIN+11 waybar"
-bindsym XF86AudioLowerVolume "amixer -c PCH sset Master 5%-; pkill -x -RTMIN+11 waybar"
-bindsym XF86AudioMute "exec amixer -c PCH sset Master -1%; pkill -x -RTMIN+11 waybar"
+bindsym XF86AudioRaiseVolume 'exec amixer set Master 5%+  && pkill -x -RTMIN+11 waybar'
+bindsym XF86AudioLowerVolume 'exec amixer set Master 5%-- && pkill -x -RTMIN+11 waybar'
+bindsym XF86AudioMute 'exec amixer set Master toggle && pkill -x -RTMIN+11 waybar'
 bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 bindsym XF86MonBrightnessDown exec light -U 10
 bindsym XF86MonBrightnessUp exec light -A 10
@@ -81,13 +80,13 @@ input * xkb_numlock enable
 bindsym print exec slurp | grim -g - $(date '+%F_%T').png
 
 # Autostart
-exec /usr/libexec/polkit-gnome-authentication-agent-1
+#exec /usr/libexec/polkit-gnome-authentication-agent-1
 exec mako
 #exec ~/volumeguard.sh
 exec swaybg -i ~/bg.png
 exec dbus-update-activation-environment DISPLAY WAYLAND_DISPLAY XDG_RUNTIME_DIR DBUS_SESSION_BUS_ADRESS
 exec export XDG_SESSION_TYPE=wayland; export GDK_BACKEND=wayland; export QT_QPA_PLATFORM=wayland; export MOZ_ENABLE_WAYLAND=1;
-exec /usr/bin/gnome-keyring-daemon; /usr/bin/gnome-keyring-daemon  
+#exec /usr/bin/gnome-keyring-daemon; /usr/bin/gnome-keyring-daemon  
 #exec --no-startup-id pipewire
 
 include @sysconfdir@/sway/config.d/*

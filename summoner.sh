@@ -9,11 +9,11 @@ cp -r ~/.config/alacritty/ ./configs &&
 cp -r ~/.config/gtk-3.0/ ./configs &&
 cp -r ~/.bashrc ./configs/ &&
 cp ~/.asoundrc ./configs/ &&
-
+cp -r ~/.emacs.d ./configs/ &&
 cp -r ~/.config/wofi/ ./configs/ &&
 #cp /etc/nanorc ./configs/ &&
 #cp /etc/samba/smb.conf ./configs/ &&
 cp -r ~/.config/mc ./configs/ &&
-cp ~/.tmux.conf ./configs/ &&
+#cp ~/.tmux.conf ./configs/ &&
 cp -r ~/.config/sway/ ./configs/ &&
 echo ":)"

@@ -70,3 +70,9 @@ net-misc/freetube-bin ~amd64
 =games-util/steam-meta-0-r20160817 ~amd64K
 # required by imv (argument)
 =media-gfx/imv-4.2.0 ~amd64
+# required by minecraft-launcher (argument)
+=games-action/minecraft-launcher-921 ~amd64
+# required by ytfzf (argument)
+=net-misc/ytfzf-1.1.5 ~amd64
+# required by fzf (argument)
+=app-shells/fzf-0.27.0 ~amd64

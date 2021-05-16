@@ -1,5 +1,5 @@
 allow_images=true
 insensitive=true
-term=kitty
+term=alacritty
 prompt=Search
 

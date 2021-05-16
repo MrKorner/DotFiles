@@ -1,10 +1,82 @@
 defaults.pcm.!card PCH
 defaults.pcm.!device 0
-defaults.ctl.!card PCH
-defaults.pcm.dmix.rate 96000
-defaults.ctl.dmix.rate 96000
-pcm.dsp {
-    type plug
-    slave.pcm "dmix"
+defaults.pcm.!ctl PCH 
+pcm.!default {
+	@func refer
+	name { @func concat
+		strings [ "pcm."
+			{ 	@func getenv
+				vars [ ALSA_DEFAULT_PCM ]
+				default "sym"
+			}
+		
+		]
+	}
 }
 
+pcm.sym {
+	type asym;
+	playback.pcm "out_mixer_plug"
+	capture.pcm  "mic_snoop_plug"
+}
+
+
+###########
+#  OUTPUT #
+###########
+
+
+pcm.out_mixer_plug {
+	type plug;
+	slave.pcm "out_mixer"
+}
+
+pcm.out_mixer {
+	type dmix;
+	ipc_key 1024;
+	slave {
+
+		# THIS IS YOUR DEFAULT OUTPUT DEVICE !!!
+		pcm "hw:PCH,0,0" 
+
+		rate 48000
+		channels 2
+		period_time 0
+
+		# Adjusts latency, this is on high side
+		# Some programs may not like short buffers, experiment yourself
+		period_size 1024
+		buffer_size 8192
+	}
+}
+
+##############
+# MICROPHONE #
+##############
+
+pcm.mic_snoop_plug {
+	type plug;
+	slave.pcm "mic_snoop";
+}
+
+pcm.mic_snoop {
+    type dsnoop
+
+	ipc_key 4641
+	ipc_perm 0666 
+
+	# THIS IS YOUR DEFAULT MICROPHONE !!! 
+	slave.pcm "hw:PCH,0,1"
+
+	slave 
+	{
+		period_time 0
+		period_size 512
+		buffer_size 2048
+		channels 2 
+	}
+	bindings {
+        0 0
+        1 1
+    }
+}

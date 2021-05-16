@@ -1,1 +1,5 @@
 Theme = black_theme
+HideFileExtension = yes
+SoundDriver = ALSA
+ALSADevice = default
+ALSAMixer1 = Master

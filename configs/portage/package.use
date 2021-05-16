@@ -1,7 +1,7 @@
-www-client/firefox -clang
+app-editors/emacs dynamic-loading sound
+dev-vcs/git -perl
+sys-devel/binutils gold 
 media-sound/moc ffmpeg wavpack -magic 
-media-sound/mpd -fifo  -id3tag -inotify
-net-p2p/transmission -gtk
 dev-libs/glib -dbus
 sys-apps/man-db -nls
 gnome-extra/zenity -libnotify
@@ -12,17 +12,13 @@ app-emulation/qemu -oss -vnc spice -png -slirp -doc usbredir vhost-user-fs
 media-gfx/gimp -mng
 media-libs/openjpeg -jpeg2k 
 app-crypt/pinentry -gtk
-sys-auth/polkit duktape
+sys-auth/polkit duktape -gtk
 gui-wm/sway seatd -swaynag -swayidle
 net-wireless/iwd standalone
 sys-fs/lvm2 -thin
 app-admin/doas persistent
-media-gfx/gthumb -cdr -exif -lcms
 sys-fs/eudev -introspection
 www-client/w3m -imlib
-media-sound/pulseaudio -tcpd -alsa-plugin
-media-libs/libcanberra -gtk -sound
-media-sound/deadbeef wavpack -supereq ffmpeg
 gui-libs/wlroots seatd
 gui-apps/waybar -network popups -wifi
 media-video/ffmpeg x265 wavpack -opus -jpeg2k
@@ -210,3 +206,6 @@ media-libs/libsdl2 gles2
 # required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
 # required by steam-meta (argument)
 app-arch/bzip2 abi_x86_32
+# required by www-client/firefox-88.0.1::gentoo[pgo]
+# required by firefox (argument)
+>=x11-base/xorg-server-1.20.11 xvfb
