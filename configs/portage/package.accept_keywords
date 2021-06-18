@@ -7,12 +7,6 @@ gui-wm/wayfire ~amd64
 gui-apps/wcm ~amd64
 gui-apps/waybar ~amd64
 gui-apps/wdisplays ~amd64
-gui-apps/wlr-randr ~amd64
-net-misc/freetube-bin ~amd64
-# required by deadbeef (argument)
-=media-sound/deadbeef-1.8.4 ~amd64
-# required by wayfire-plugins-extra (argument)
-=gui-libs/wayfire-plugins-extra-0.7.0 ~amd64
 # required by lolcat-jaseg (argument)
 =games-misc/lolcat-jaseg-1.0 ~amd64
 # required by wofi (argument)
@@ -21,20 +15,9 @@ net-misc/freetube-bin ~amd64
 =dev-libs/light-1.2.2-r1 ~amd64
 # required by @selected
 # required by @world (argument)
-=x11-terms/kitty-0.19.3 ~amd64
-# required by gui-apps/waybar-0.9.5::gentoo
-# required by @selected
-# required by @world (argument)
 =dev-libs/date-3.0.0 ~amd64
 # required by gui-wm/wayfire-0.7.0::gentoo[system-wfconfig]
 # required by gui-apps/wcm-0.7.0::gentoo
-# required by @selected
-# required by @world (argument)
-=gui-libs/wf-config-0.7.0 ~amd64
-# required by x11-terms/kitty-0.19.3::gentoo
-# required by @selected
-# required by @world (argument)
-=x11-terms/kitty-terminfo-0.19.3 ~amd64
 # required by @selected
 # required by @world (argument)
 =games-action/multimc-0.6.11 ~amd64
@@ -47,12 +30,8 @@ net-misc/freetube-bin ~amd64
 # required by jmtpfs (argument)
 =sys-fs/jmtpfs-0.5-r1 ~amd64
 # required by ufetch (argument)
-=app-misc/ufetch-0.2 ~amd64
-
 # required by radeontop (argument)
 =app-misc/radeontop-1.3-r2 ~amd64
-# required by teams (argument)
-=net-im/teams-1.4.00.7556 ~amd64
 # required by games-util/steam-meta-0-r20160817::steam-overlay
 # required by steam-meta (argument)
 =games-util/steam-launcher-1.0.0.69 ~amd64
@@ -70,9 +49,23 @@ net-misc/freetube-bin ~amd64
 =games-util/steam-meta-0-r20160817 ~amd64K
 # required by imv (argument)
 =media-gfx/imv-4.2.0 ~amd64
-# required by minecraft-launcher (argument)
-=games-action/minecraft-launcher-921 ~amd64
-# required by ytfzf (argument)
-=net-misc/ytfzf-1.1.5 ~amd64
-# required by fzf (argument)
-=app-shells/fzf-0.27.0 ~amd64
+# required by pandoc-bin (argument)
+=app-text/pandoc-bin-2.13 ~amd64
+# required by weasyprint (argument)
+=dev-python/weasyprint-52.5 ~amd64
+# required by fox (argument)
+=x11-libs/fox-1.7.67 ~amd64
+# required by x11-misc/xfe-1.43.2::gentoo
+# required by xfe (argument)
+=x11-libs/fox-1.6.57-r1 ~amd64
+# required by xfe (argument)
+=x11-misc/xfe-1.43.2 ~amd64
+# required by sfeed (argument)
+=net-news/sfeed-0.9.23 ~amd64
+# required by torbrowser-launcher (argument)
+=www-client/torbrowser-launcher-0.3.3 ~amd64
+# required by gomuks (argument)
+=net-im/gomuks-0.2.3 ~amd64
+# required by net-im/gomuks-0.2.3::elopez-r-overlay[encryption]
+# required by gomuks (argument)
+=dev-libs/olm-3.2.3 ~amd64

@@ -69,10 +69,13 @@ bar {
 }
 
 # Function binds 
-bindsym XF86AudioRaiseVolume 'exec amixer set Master 5%+  && pkill -x -RTMIN+11 waybar'
-bindsym XF86AudioLowerVolume 'exec amixer set Master 5%-- && pkill -x -RTMIN+11 waybar'
-bindsym XF86AudioMute 'exec amixer set Master toggle && pkill -x -RTMIN+11 waybar'
+#bindsym XF86AudioRaiseVolume 'exec amixer set Master 5%+  && pkill -x -RTMIN+11 waybar'
+#bindsym XF86AudioLowerVolume 'exec amixer set Master 5%-- && pkill -x -RTMIN+11 waybar'
+#bindsym XF86AudioMute 'exec amixer set Master toggle && pkill -x -RTMIN+11 waybar'
 bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -5%
+bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
 bindsym XF86MonBrightnessDown exec light -U 10
 bindsym XF86MonBrightnessUp exec light -A 10
 bindsym $mod+Shift+l exec swaylock -c 000000
@@ -82,12 +85,15 @@ bindsym print exec slurp | grim -g - $(date '+%F_%T').png
 # Autostart
 #exec /usr/libexec/polkit-gnome-authentication-agent-1
 exec mako
-#exec ~/volumeguard.sh
+exec sh ~/volumeguard.sh
 exec swaybg -i ~/bg.png
 exec dbus-update-activation-environment DISPLAY WAYLAND_DISPLAY XDG_RUNTIME_DIR DBUS_SESSION_BUS_ADRESS
 exec export XDG_SESSION_TYPE=wayland; export GDK_BACKEND=wayland; export QT_QPA_PLATFORM=wayland; export MOZ_ENABLE_WAYLAND=1;
 #exec /usr/bin/gnome-keyring-daemon; /usr/bin/gnome-keyring-daemon  
-#exec --no-startup-id pipewire
-
+exec --no-startup-id pipewire
+for_window [app_id="^.*"] opacity 1
+default_border pixel 4
+default_floating_border pixel 4
+hide_edge_borders smart
 include @sysconfdir@/sway/config.d/*
 

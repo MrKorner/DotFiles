@@ -582,7 +582,7 @@ type/^PostScript
 
 # PDF
 type/^PDF
-	Open=/usr/bin/mupdf %f &
+	Open=/usr/bin/zathura %f &
 	View=%view{ascii} /usr/libexec/mc/ext.d/doc.sh view pdf
 
 # html
@@ -829,7 +829,7 @@ include/image
 	View=%view{ascii} /usr/libexec/mc/ext.d/image.sh view ALL_FORMATS
 
 include/video
-	Open=/usr/bin/celluloid %f &
+	Open=/usr/bin/mpv %f &
 	View=%view{ascii} /usr/libexec/mc/ext.d/video.sh view ALL_FORMATS
 
 

@@ -4,32 +4,13 @@
   "position": "bottom",
   "modules-left": ["sway/workspaces"],
   "modules-center": ["sway/window"],
-  "modules-right": ["sway/language", "custom/alsa", "temperature", "backlight", "battery", "clock",],
-  "wlr/taskbar": {
-    "format": "{icon} {title:.32}",
-    "icon-size": 20,
-    "icon-theme": "Flat-Remix-Red-Dark",
-    "tooltip-format": "{title}",
-    "on-click": "activate",
-    "on-click-right": "minimize",
-    "on-click-middle": "close",
-  },
-  "custom/alsa": {
-    "exec": "amixer get -c PCH Master | awk '$0~/%/{print $4}' | tr -d '[]'",
-    "on-click": "amixer -c PCH sset Master +1 toggle; pkill -x -RTMIN+11 waybar",
-    "on-scroll-up": "amixer -c PCH sset Master 5%+; pkill -x -RTMIN+11 waybar",
-    "on-scroll-down": "amixer -c PCH sset Master 5%-; pkill -x -RTMIN+11 waybar",
-    "signal": 11,
-    "interval": 10,
-    "tooltip": false
-  },
+  "modules-right": ["sway/language", "pulseaudio", "temperature", "backlight", "battery", "clock"],
 
   "pulseaudio": {
     "tooltip": false,
     "on-click": "pavucontrol",
     "scroll-step": 5,
     "format": "{icon} ({volume}%)",
-    "format-bluetooth": "{icon}BL ({volume}%)",
     "format-muted": "🔈 ({volume}%)",
     "format-icons": {
       "default": ["🔉", "🔊"],

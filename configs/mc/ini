@@ -121,6 +121,8 @@ linux=
 
 tmux-256color=
 
+alacritty=
+
 [Panels]
 simple_swap=false
 show_mini_info=true
