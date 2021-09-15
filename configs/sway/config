@@ -85,12 +85,12 @@ bindsym print exec slurp | grim -g - $(date '+%F_%T').png
 # Autostart
 #exec /usr/libexec/polkit-gnome-authentication-agent-1
 exec mako
-exec sh ~/volumeguard.sh
-exec swaybg -i ~/bg.png
+#exec sh ~/volumeguard.sh
+#exec swaybg -i ~/bg.png
 exec dbus-update-activation-environment DISPLAY WAYLAND_DISPLAY XDG_RUNTIME_DIR DBUS_SESSION_BUS_ADRESS
-exec export XDG_SESSION_TYPE=wayland; export GDK_BACKEND=wayland; export QT_QPA_PLATFORM=wayland; export MOZ_ENABLE_WAYLAND=1;
+exec export XDG_SESSION_TYPE=wayland; export GDK_BACKEND=wayland; export QT_QPA_PLATFORM=wayland; export MOZ_ENABLE_WAYLAND=1; export _JAVA_AWT_WM_NONREPARENTING=1
 #exec /usr/bin/gnome-keyring-daemon; /usr/bin/gnome-keyring-daemon  
-exec --no-startup-id pipewire
+#exec --no-startup-id pipewire
 for_window [app_id="^.*"] opacity 1
 default_border pixel 4
 default_floating_border pixel 4

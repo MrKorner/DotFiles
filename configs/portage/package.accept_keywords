@@ -1,3 +1,5 @@
+dev-libs/bemenu ~amd64
+media-gfx/imv ~amd64
 www-client/firefox-bin ~amd64
 www-client/firefox ~amd64
 dev-java/openjdk-jre-bin ~amd64
@@ -32,40 +34,5 @@ gui-apps/wdisplays ~amd64
 # required by ufetch (argument)
 # required by radeontop (argument)
 =app-misc/radeontop-1.3-r2 ~amd64
-# required by games-util/steam-meta-0-r20160817::steam-overlay
-# required by steam-meta (argument)
-=games-util/steam-launcher-1.0.0.69 ~amd64
-# required by games-util/steam-launcher-1.0.0.69::steam-overlay[udev,joystick]
-# required by games-util/steam-meta-0-r20160817::steam-overlay
-# required by steam-meta (argument)
-=games-util/game-device-udev-rules-20201228 ~amd64
-# required by games-util/steam-meta-0-r20160817::steam-overlay
-# required by steam-meta (argument)
-=games-util/steam-client-meta-0-r20210322 ~amd64
-# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
-# required by steam-meta (argument)
-=games-util/steam-games-meta-0-r20210323 ~amd64
-# required by steam-meta (argument)
-=games-util/steam-meta-0-r20160817 ~amd64K
 # required by imv (argument)
 =media-gfx/imv-4.2.0 ~amd64
-# required by pandoc-bin (argument)
-=app-text/pandoc-bin-2.13 ~amd64
-# required by weasyprint (argument)
-=dev-python/weasyprint-52.5 ~amd64
-# required by fox (argument)
-=x11-libs/fox-1.7.67 ~amd64
-# required by x11-misc/xfe-1.43.2::gentoo
-# required by xfe (argument)
-=x11-libs/fox-1.6.57-r1 ~amd64
-# required by xfe (argument)
-=x11-misc/xfe-1.43.2 ~amd64
-# required by sfeed (argument)
-=net-news/sfeed-0.9.23 ~amd64
-# required by torbrowser-launcher (argument)
-=www-client/torbrowser-launcher-0.3.3 ~amd64
-# required by gomuks (argument)
-=net-im/gomuks-0.2.3 ~amd64
-# required by net-im/gomuks-0.2.3::elopez-r-overlay[encryption]
-# required by gomuks (argument)
-=dev-libs/olm-3.2.3 ~amd64
